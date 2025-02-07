@@ -13,10 +13,10 @@ function LoadingScreen() {
 
 const RootLayout = () => {
   return (
-    <div className="min-h-screen flex flex-col font-favorit bg-bg-default text-white overflow-x-hidden">
+    <div className="min-h-screen font-favorit bg-bg-default text-white relative">
       <Suspense fallback={<LoadingScreen />}>
         <Navbar />
-        <main className="flex-grow pt-[72px] md:pt-[72px] lg:pt-[88px] xl:pt-[138px] relative w-full">
+        <main className="pt-[72px] md:pt-[72px] lg:pt-[88px] xl:pt-[138px] relative z-10 bg-bg-default" style={{ marginBottom: 'var(--footer-height, 600px)' }}>
           <Outlet />
         </main>
         <Footer />

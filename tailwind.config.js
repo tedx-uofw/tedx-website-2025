@@ -27,10 +27,15 @@ export default {
         'expand-vertical': {
           '0%': { transform: 'scaleY(0)' },
           '100%': { transform: 'scaleY(1)' }
+        },
+        'slide-up': {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)' }
         }
       },
       animation: {
-        'expand-vertical': 'expand-vertical 0.8s ease-out forwards'
+        'expand-vertical': 'expand-vertical 0.8s ease-out forwards',
+        'slide-up': 'slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards'
       }
     },
   },

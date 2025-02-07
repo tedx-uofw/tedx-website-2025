@@ -1,15 +1,32 @@
 import { Link } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
 import Image from './Image'
 import Logo from '../resources/img/logos/Logo.png'
 import ResonanceGif from '../resources/img/components/footer/resonance-footer.gif'
 
 const Footer = () => {
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const updateFooterHeight = () => {
+      if (footerRef.current) {
+        const height = footerRef.current.offsetHeight;
+        document.documentElement.style.setProperty('--footer-height', `${height}px`);
+      }
+    };
+
+    updateFooterHeight();
+    window.addEventListener('resize', updateFooterHeight);
+    
+    return () => window.removeEventListener('resize', updateFooterHeight);
+  }, []);
+
   return (
-    <footer className="relative flex flex-col bg-[#0C0133] w-full">
-      <div className="w-full px-6 md:px-8 lg:px-[100px] xl:px-[100px]">
+    <footer ref={footerRef} className="fixed bottom-0 left-0 right-0 bg-[#0C0133] w-full">
+      <div className="w-full px-12 md:px-12 lg:px-[100px] xl:px-[100px]">
         {/* Top Section */}
-        <div className="py-8 md:py-8 lg:py-16">
-          <div className="flex flex-wrap justify-between gap-8 md:gap-16">
+        <div className="py-4 md:py-6 lg:py-16">
+          <div className="flex flex-wrap justify-between gap-4 md:gap-8 lg:gap-16">
             {/* Logo Section */}
             <div className="flex flex-col gap-2">
               <Link to="/" className="block">
