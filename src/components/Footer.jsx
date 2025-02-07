@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useLayoutEffect } from 'react'
 import Image from './Image'
 import Logo from '../resources/img/logos/Logo.png'
 import ResonanceGif from '../resources/img/components/footer/resonance-footer.gif'
@@ -7,18 +7,38 @@ import ResonanceGif from '../resources/img/components/footer/resonance-footer.gi
 const Footer = () => {
   const footerRef = useRef(null);
 
-  useEffect(() => {
-    const updateFooterHeight = () => {
-      if (footerRef.current) {
-        const height = footerRef.current.offsetHeight;
-        document.documentElement.style.setProperty('--footer-height', `${height}px`);
-      }
-    };
+  const updateFooterHeight = () => {
+    if (footerRef.current) {
+      const height = footerRef.current.offsetHeight;
+      document.documentElement.style.setProperty('--footer-height', `${height}px`);
+    }
+  };
 
+  // Initial measurement using useLayoutEffect to run before browser paint
+  useLayoutEffect(() => {
     updateFooterHeight();
-    window.addEventListener('resize', updateFooterHeight);
+  }, []);
+
+  // Setup listeners and handle dynamic updates
+  useEffect(() => {
+    // Run on mount with a slight delay to ensure content is loaded
+    const initialTimer = setTimeout(updateFooterHeight, 100);
     
-    return () => window.removeEventListener('resize', updateFooterHeight);
+    // Run when images and fonts load
+    window.addEventListener('load', updateFooterHeight);
+    document.fonts.ready.then(updateFooterHeight);
+    
+    // Handle resize
+    const resizeObserver = new ResizeObserver(updateFooterHeight);
+    if (footerRef.current) {
+      resizeObserver.observe(footerRef.current);
+    }
+
+    return () => {
+      clearTimeout(initialTimer);
+      window.removeEventListener('load', updateFooterHeight);
+      resizeObserver.disconnect();
+    };
   }, []);
 
   return (
