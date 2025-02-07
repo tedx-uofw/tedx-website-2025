@@ -15,8 +15,8 @@ const HeroNav = () => {
 
   return (
     <div className="absolute top-0 left-0 right-0 pt-[72px] md:pt-[72px] lg:pt-[88px] xl:pt-[138px]">
-      <div className="w-full px-12 md:px-12 lg:px-[100px] xl:px-[100px] py-6">
-        <div className="flex justify-between items-center text-[#FDFCFD] text-xl md:text-2xl">
+      <div className="w-full px-6 md:px-12 lg:px-[100px] xl:px-[100px] py-6">
+        <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-[#FDFCFD] text-base md:text-xl">
           <div className="flex items-start">
             <span>04.12.2025</span>
             <span className="text-[#CBC4CC] text-sm md:text-base ml-2 relative top-0">Saturday</span>
@@ -52,7 +52,7 @@ const Home = () => {
   return (
     <div className="space-y-16 font-favorit">
       {/* Hero Section */}
-      <div className="relative min-h-screen -mt-[72px] md:-mt-[72px] lg:-mt-[88px] xl:-mt-[138px]">
+      <div className="relative min-h-[100svh] -mt-[72px] md:-mt-[72px] lg:-mt-[88px] xl:-mt-[138px]">
         {/* Background div for future animation */}
         <div className="absolute inset-0 bg-gradient-to-r from-bg-default to-bg-footer pointer-events-none" />
         
@@ -60,18 +60,20 @@ const Home = () => {
         <HeroNav />
         
         {/* Content */}
-        <div className="absolute bottom-[60px] left-12 md:left-12 lg:left-[100px] xl:left-[100px] z-10 flex flex-col gap-y-6">
-          <h1 className="text-[80px] font-bold">Resonance</h1>
-          <p className="text-4xl max-w-2xl font-semibold">
-            Reflects the idea that a single action or idea can echo and shape the world, leaving a lasting impact.
-          </p>
-          <div className="flex gap-x-10">
-            <Link to="/buy" className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff]">
-              BUY TICKETS
-            </Link>
-            <Link to="/about" className="border border-white/20 text-white px-4 py-2 rounded text-lg hover:bg-white/10 transition-colors">
-              LEARN MORE
-            </Link>
+        <div className="absolute bottom-[60px] px-6 md:px-12 lg:px-[100px] xl:px-[100px] w-full">
+          <div className="flex flex-col gap-y-6 max-w-[90%] md:max-w-2xl">
+            <h1 className="text-[48px] md:text-[64px] lg:text-[80px] font-bold leading-tight">Resonance</h1>
+            <p className="text-2xl md:text-3xl lg:text-4xl max-w-2xl font-semibold">
+              Reflects the idea that a single action or idea can echo and shape the world, leaving a lasting impact.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-10">
+              <Link to="/buy" className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff] text-center">
+                BUY TICKETS
+              </Link>
+              <Link to="/about" className="border border-white/20 text-white px-4 py-2 rounded text-lg hover:bg-white/10 transition-colors text-center">
+                LEARN MORE
+              </Link>
+            </div>
           </div>
         </div>
       </div>
