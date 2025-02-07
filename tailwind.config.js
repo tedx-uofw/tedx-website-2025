@@ -5,14 +5,33 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'sm': '600px',
+      'md': '768px',
+      'lg': '1440px',
+      'xl': '1920px',
+    },
     extend: {
       colors: {
         'ted-red': '#e62b1e',
         'dark': '#1a1a1a',
+        'bg-default': '#080808',
+        'bg-footer': '#0C0133',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        'sans': ['ABC Favorit Variable', 'system-ui', 'sans-serif'],
+        'favorit': ['ABC Favorit Variable', 'system-ui', 'sans-serif'],
+        'favorit-mono': ['ABC Favorit Mono Variable', 'monospace'],
       },
+      keyframes: {
+        'expand-vertical': {
+          '0%': { transform: 'scaleY(0)' },
+          '100%': { transform: 'scaleY(1)' }
+        }
+      },
+      animation: {
+        'expand-vertical': 'expand-vertical 0.8s ease-out forwards'
+      }
     },
   },
   plugins: [],

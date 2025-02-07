@@ -12,5 +12,9 @@ export default defineConfig({
         '.js': 'jsx'
       }
     }
+  },
+  server: {
+    host: true,
+    allowedHosts: ['localhost.daeila.com']
   }
 }) 
