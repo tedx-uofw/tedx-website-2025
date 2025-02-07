@@ -6,10 +6,10 @@ const RootLayout = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
         <Outlet />
       </main>
-      <Footer />
+      <Footer/>
     </div>
   )
 }
