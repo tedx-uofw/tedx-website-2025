@@ -130,13 +130,15 @@ const Footer = () => {
             </div>
           </div>
           {/* Resonance Gif */}
-          <Image 
-            src={ResonanceGif}
-            alt="RESONANCE sliding focus gif"
-            layout="fill"
-            background="transparent"
-            className="object-cover animate-expand-vertical"
-          />
+          <div className="mt-8 md:mt-16">
+            <Image 
+              src={ResonanceGif}
+              alt="RESONANCE sliding focus gif"
+              layout="fill"
+              background="transparent"
+              className="object-cover animate-expand-vertical"
+            />
+          </div>
         </div>
       </div>
     </footer>
