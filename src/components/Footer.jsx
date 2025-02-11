@@ -42,10 +42,10 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer ref={footerRef} className="fixed bottom-0 left-0 right-0 bg-[#0C0133] w-full">
-      <div className="w-full px-12 md:px-12 lg:px-[100px] xl:px-[100px]">
-        {/* Top Section */}
-        <div className="py-4 md:py-6 lg:py-16">
+    <footer ref={footerRef} className="fixed bottom-0 left-0 right-0 bg-[#0C0133] w-full h-screen">
+      <div className="w-full h-full px-12 md:px-12 lg:px-[100px] xl:px-[100px] flex flex-col">
+        <div className="flex-1 py-4 md:py-6 lg:py-16 flex flex-col">
+          {/* Logo and Navigation */}
           <div className="flex flex-wrap justify-between gap-4 md:gap-8 lg:gap-16">
             {/* Logo Section */}
             <div className="flex flex-col gap-2">
@@ -87,8 +87,19 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Resonance Gif */}
+          <div className="flex-1 relative overflow-hidden my-8">
+            <Image 
+              src={ResonanceGif}
+              alt="RESONANCE sliding focus gif"
+              layout="fill"
+              background="transparent"
+              className="object-cover animate-expand-vertical"
+            />
+          </div>
+
           {/* Bottom Section */}
-          <div className="mt-16 flex flex-wrap justify-between items-center gap-4">
+          <div className="flex flex-wrap justify-between items-center gap-4 py-4">
             <div className="flex flex-col md:flex-row gap-2">
               <p className="text-white">©TEDxUofW 2024 | Crossroads</p>
               <span className="hidden md:inline text-white">|</span>
@@ -129,14 +140,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* Resonance Gif */}
-          <Image 
-            src={ResonanceGif}
-            alt="RESONANCE sliding focus gif"
-            layout="fill"
-            background="transparent"
-            className="object-cover animate-expand-vertical"
-          />
         </div>
       </div>
     </footer>
