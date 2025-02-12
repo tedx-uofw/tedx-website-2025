@@ -96,7 +96,7 @@ export default function TeamSection() {
     
 
     return (
-        <div class="flex flex-col items-start w-[1920px] h-[9874px] mt-[1000px] p-[0px_200px_200px_200px] gap-[100px] bg-[#080808]">
+        <div class="flex flex-col items-start w-full mt-[1000px] p-[0px_200px_200px_200px] gap-[100px] bg-[#080808]">
             {teamData.map((data, index) => (
                 <IndividualTeams 
                     key={index}
