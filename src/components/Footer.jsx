@@ -90,7 +90,7 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="mt-16 flex flex-wrap justify-between items-center gap-4">
             <div className="flex flex-col md:flex-row gap-2">
-              <p className="text-white">©TEDxUofW 2024 | Crossroads</p>
+              <p className="text-white">©TEDxUofW 2025 | Resonance</p>
               <span className="hidden md:inline text-white">|</span>
               <p className="text-white text-sm">This independent TEDx event is operated under license from TED.</p>
             </div>
