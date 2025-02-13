@@ -81,7 +81,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-2">
                   <Link to="/about" className="text-white opacity-60 hover:opacity-100 transition-opacity">About Us</Link>
                   <Link to="/team" className="text-white opacity-60 hover:opacity-100 transition-opacity">Team</Link>
-                  <Link to="/past-events" className="text-white opacity-60 hover:opacity-100 transition-opacity">Past Events</Link>
+                  <Link to="https://www.tedxatuofw.com/past-events" className="text-white opacity-60 hover:opacity-100 transition-opacity">Past Events</Link>
                 </div>
               </div>
             </div>
