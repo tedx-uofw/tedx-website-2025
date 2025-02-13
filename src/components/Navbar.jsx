@@ -1,8 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Logo from '../resources/img/logos/Logo.png'
-import BorgerClosed from '../resources/img/components/navbar/borger/borger-menu-closed.svg'
-import BorgerOpened from '../resources/img/components/navbar/borger/borger-menu-opened.svg'
 import Image from './Image'
 
 const MenuButton = ({ isOpen, onClick }) => (
@@ -12,20 +10,76 @@ const MenuButton = ({ isOpen, onClick }) => (
     aria-label="Toggle menu"
   >
     <div className="relative w-[32px] h-[32px] scale-[0.666] md:scale-[0.666] lg:scale-[0.833] xl:scale-1">
-      <img 
-        src={BorgerClosed}
-        alt=""
-        className={`absolute inset-0 transition-all duration-300 ${
-          isOpen ? 'opacity-0 scale-90 rotate-[-30deg]' : 'opacity-100 scale-100 rotate-0'
-        }`}
-      />
-      <img 
-        src={BorgerOpened}
-        alt=""
-        className={`absolute inset-0 transition-all duration-300 ${
-          isOpen ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-90 rotate-30'
-        }`}
-      />
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Closed State Dots */}
+        {[0, 1, 2, 3, 4].map((col) => (
+          [0, 1, 2].map((row) => {
+            const cx = 3 + col * 8;
+            const cy = 3 + row * 16;
+            const dx = cx - 19;
+            const dy = cy - 19;
+            return (
+              <circle
+                key={`${col}-${row}`}
+                cx={cx}
+                cy={cy}
+                r="3"
+                fill="#D9D9D9"
+                style={{
+                  transformOrigin: '19px 19px',
+                  transform: isOpen 
+                    ? `translate(${-dx}px, ${-dy}px) scale(0)`
+                    : 'translate(0, 0) scale(1)',
+                  opacity: isOpen ? 0 : 1,
+                  transition: 'all 0.2s linear',
+                  transitionDelay: isOpen ? '0s' : '0.0s'
+                }}
+              />
+            );
+          })
+        ))}
+
+        {/* Center Dot (Transition State) */}
+        <circle
+          cx="19"
+          cy="19"
+          r="3"
+          fill="#D9D9D9"
+          style={{
+            transform: `scale(1)`,
+            opacity: 1,
+            transition: 'all 0s linear'
+          }}
+        />
+
+        {/* Opened State Dots */}
+        {[
+          [3, 3], [11, 11], [27, 12], [35, 3],
+          [11, 26], [19, 19], [27, 26],
+          [3, 35], [35, 35]
+        ].map(([cx, cy], index) => {
+          const dx = cx - 19;
+          const dy = cy - 19;
+          return (
+            <circle
+              key={`open-${index}`}
+              cx={cx}
+              cy={cy}
+              r="3"
+              fill="#D9D9D9"
+              style={{
+                transformOrigin: '19px 19px',
+                transform: isOpen 
+                  ? 'translate(0, 0) scale(1)'
+                  : `translate(${-dx}px, ${-dy}px) scale(0)`,
+                opacity: isOpen ? 1 : 0,
+                transition: 'all 0.2s linear',
+                transitionDelay: isOpen ? '0.0s' : '0s'
+              }}
+            />
+          );
+        })}
+      </svg>
     </div>
   </button>
 );
@@ -127,6 +181,11 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      if (isMenuOpen) {
+        setVisible(true)
+        return
+      }
+
       const currentScrollPos = window.scrollY
       const isScrollingUp = prevScrollPos > currentScrollPos
       
@@ -136,7 +195,13 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [prevScrollPos])
+  }, [prevScrollPos, isMenuOpen])
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      setVisible(true)
+    }
+  }, [isMenuOpen])
 
   return (
     <>
@@ -162,7 +227,7 @@ const Navbar = () => {
                       width={187}
                       height={48}
                       layout="constrained"
-                      priority={true}
+                      priority="true"
                       background="transparent"
                     />
                   </div>
@@ -194,4 +259,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
