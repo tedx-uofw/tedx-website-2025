@@ -60,13 +60,13 @@ const Home = () => {
         <HeroNav />
         
         {/* Content */}
-        <div className="absolute bottom-[60px] px-6 md:px-12 lg:px-[100px] xl:px-[100px] w-full">
-          <div className="flex flex-col gap-y-6 max-w-[90%] md:max-w-2xl">
-            <h1 className="text-[48px] md:text-[64px] lg:text-[80px] font-bold leading-tight">Resonance</h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl max-w-2xl font-semibold">
+        <div className="absolute bottom-[40px] sm:bottom-[60px] px-6 md:px-12 lg:px-[100px] xl:px-[100px] w-full">
+          <div className="flex flex-col gap-y-4 sm:gap-y-6 max-w-[90%] md:max-w-2xl">
+            <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] font-bold leading-tight">Resonance</h1>
+            <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl max-w-2xl font-semibold leading-snug">
               Reflects the idea that a single action or idea can echo and shape the world, leaving a lasting impact.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-10">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-10 mt-2">
               <Link to="/buy" className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff] text-center">
                 BUY TICKETS
               </Link>

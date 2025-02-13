@@ -81,7 +81,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-2">
                   <Link to="/about" className="text-white opacity-60 hover:opacity-100 transition-opacity">About Us</Link>
                   <Link to="/team" className="text-white opacity-60 hover:opacity-100 transition-opacity">Team</Link>
-                  <Link to="/past-events" className="text-white opacity-60 hover:opacity-100 transition-opacity">Past Events</Link>
+                  <Link to="https://www.tedxatuofw.com/past-events" className="text-white opacity-60 hover:opacity-100 transition-opacity">Past Events</Link>
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="mt-16 flex flex-wrap justify-between items-center gap-4">
             <div className="flex flex-col md:flex-row gap-2">
-              <p className="text-white">©TEDxUofW 2024 | Crossroads</p>
+              <p className="text-white">©TEDxUofW 2025 | Resonance</p>
               <span className="hidden md:inline text-white">|</span>
               <p className="text-white text-sm">This independent TEDx event is operated under license from TED.</p>
             </div>
@@ -130,13 +130,15 @@ const Footer = () => {
             </div>
           </div>
           {/* Resonance Gif */}
-          <Image 
-            src={ResonanceGif}
-            alt="RESONANCE sliding focus gif"
-            layout="fill"
-            background="transparent"
-            className="object-cover animate-expand-vertical"
-          />
+          <div className="mt-8 md:mt-16">
+            <Image 
+              src={ResonanceGif}
+              alt="RESONANCE sliding focus gif"
+              layout="fill"
+              background="transparent"
+              className="object-cover animate-expand-vertical w-full"
+            />
+          </div>
         </div>
       </div>
     </footer>
