@@ -227,7 +227,7 @@ const Navbar = () => {
                       width={187}
                       height={48}
                       layout="constrained"
-                      priority={true}
+                      priority="true"
                       background="transparent"
                     />
                   </div>
