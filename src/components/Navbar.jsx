@@ -31,8 +31,8 @@ const MenuButton = ({ isOpen, onClick }) => (
                     ? `translate(${-dx}px, ${-dy}px) scale(0)`
                     : 'translate(0, 0) scale(1)',
                   opacity: isOpen ? 0 : 1,
-                  transition: 'all 0.3s linear',
-                  transitionDelay: isOpen ? '0.3s' : '0s'
+                  transition: 'all 0.2s linear',
+                  transitionDelay: isOpen ? '0s' : '0.0s'
                 }}
               />
             );
@@ -46,10 +46,9 @@ const MenuButton = ({ isOpen, onClick }) => (
           r="3"
           fill="#D9D9D9"
           style={{
-            transform: `scale(${isOpen ? 1 : 1})`,
-            opacity: isOpen ? 1 : 1,
-            transition: 'all 0.3s linear',
-            transitionDelay: isOpen ? '0s' : '0s'
+            transform: `scale(1)`,
+            opacity: 1,
+            transition: 'all 0s linear'
           }}
         />
 
@@ -74,8 +73,8 @@ const MenuButton = ({ isOpen, onClick }) => (
                   ? 'translate(0, 0) scale(1)'
                   : `translate(${-dx}px, ${-dy}px) scale(0)`,
                 opacity: isOpen ? 1 : 0,
-                transition: 'all 0.3s linear',
-                transitionDelay: isOpen ? '0.3s' : '0s'
+                transition: 'all 0.2s linear',
+                transitionDelay: isOpen ? '0.0s' : '0s'
               }}
             />
           );
