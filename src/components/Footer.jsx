@@ -136,7 +136,7 @@ const Footer = () => {
               alt="RESONANCE sliding focus gif"
               layout="fill"
               background="transparent"
-              className="object-cover animate-expand-vertical"
+              className="object-cover animate-expand-vertical w-full"
             />
           </div>
         </div>
