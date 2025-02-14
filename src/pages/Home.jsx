@@ -118,7 +118,38 @@ const Home = () => {
       {/* Schedule Section*/}
       <Schedule></Schedule>
 
-      {/* Venue Section*/}
+      {/* Venue + Accessibility Section*/}
+      <div className="flex p-[100px_200px] flex-col justify-center items-center gap-[60px] self-stretch">
+        <div className="flex flex-col items-start gap-[20px] self-stretch"> {/* Venue */}
+          <div className="text-[#FDFCFD] font-[ABC Favorit Variable Edu] text-[44px] font-bold leading-[50px] tracking-[-0.88px]">
+            Venue
+          </div>
+
+          <div className="max-w-[1000px] self-stretch text-[#FDFCFD] leading-none font-[ABC Favorit Variable Edu] text-[24px] font-medium leading-[28px] tracking-[-0.24px]">
+            Kane Hall is a dynamic hub for lectures, performances, and events located at the heart of UW's stunning Seattle campus.
+            The venue houses excellent acoustics and a welcoming atmosphere to engage in cultural showcases, 
+            academic milestones, thought-provoking discussions.
+            <div className="mt-2">
+              <br></br>
+              <span className="hover:text-[#B1A8B3] cursor-pointer text-[#FF0000]">Parking Information </span> |
+              <span className="hover:text-[#B1A8B3] cursor-pointer text-[#FF0000]"> Directions</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-end gap-[20px] self-stretch"> {/* Accessibility */}
+          <div className="flex max-w-[1200px] flex-col items-end gap-[40px] self-stretch"> {/* Content Container */}
+            <img
+              src="/src/resources/img/components/schedule/kane.png"
+              alt="Kane Hall"
+              className=""
+            />
+            
+          </div>
+        </div>
+
+      </div>
+
 
       
     </div>
