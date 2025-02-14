@@ -2,21 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
+.loading {
+  visibility: hidden;
+}
+
+/* Image loading utilities */
+.image-loading {
+  @apply bg-dark;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-loading::after {
+  content: "";
+  @apply absolute inset-0;
+  animation: shimmer 2s infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-100%);
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Preload fonts with display: block to prevent FOUC */
+/* Mobile fonts */
+@media screen and (max-width: 767px) {
+  @font-face {
+    font-family: 'ABC Favorit Variable';
+    src: url('./resources/fonts/Favorit+mono/ABC Favorit Variable/Web/ABCFavoritVariableEdu-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: 'ABC Favorit Mono Variable';
+    src: url('./resources/fonts/Favorit+mono/ABC Favorit Mono Variable/Web/ABCFavoritMonoVariableEdu-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+}
+
+/* Desktop fonts */
+@media screen and (min-width: 768px) {
+  @font-face {
+    font-family: 'ABC Favorit Variable';
+    src: url('./resources/fonts/Favorit+mono/ABC Favorit Variable/Print/ABCFavoritVariableEdu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: 'ABC Favorit Mono Variable';
+    src: url('./resources/fonts/Favorit+mono/ABC Favorit Mono Variable/Web/ABCFavoritMonoVariableEdu-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+}
+
 @layer base {
   html {
-    font-family: Inter, system-ui, sans-serif;
+    font-family: 'ABC Favorit Variable', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-bg-default min-h-screen overflow-x-hidden;
+  }
+
+  body {
+    @apply bg-bg-default text-white min-h-screen overflow-x-hidden;
   }
 }
 
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded-lg transition-colors duration-200;
+    @apply px-4 py-2 rounded-lg transition-colors duration-200 font-favorit;
   }
   .btn-primary {
     @apply bg-ted-red text-white hover:bg-red-700;
   }
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .container-padding {
+    @apply px-5 md:px-10 lg:px-[100px] xl:px-[200px];
+  }
+  
+  .full-width {
+    @apply w-full relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw];
+  }
+  
+  .section-padding {
+    @apply px-5 md:px-10 lg:px-[100px] xl:px-[200px] max-w-[2000px] mx-auto w-full;
   }
 }
 
