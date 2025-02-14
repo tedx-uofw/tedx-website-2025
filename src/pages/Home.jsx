@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import schedule from '../components/schedule';
 import Schedule from '../components/schedule';
+import Sponsors from '../components/home-sponsors';
 
 const HeroNav = () => {
   const handleCalendarClick = () => {
@@ -85,6 +85,7 @@ const Home = () => {
         </div>
       </div>
 
+
       {/* About Section */}
       <section className="flex px-[100px] py-[120px] items-end gap-[100px] self-stretch bg-[#0C0133]">
         <div className="w-[480px] h-[480px]"> {/* Animation */}
@@ -100,11 +101,11 @@ const Home = () => {
 
           <div className="text-[#FDFCFD] font-[ABC Favorit Variable Edu] text-[28px] font-normal leading-[34px] tracking-[-0.28px]">
             The way a single action, idea, or event emerges and continues to echo over time, creating waves that extend far beyond the initial moment. 
-            <br />
             Learn how the essence of a single moment can contribute to a larger, lasting legacy that connects people and ideas across time and space.
           </div>
         </div>
       </section>
+
 
       {/* Video Section*/}
       <div className="h-[800px] flex flex-col items-center self-stretch bg-[#080808]">
@@ -115,8 +116,12 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Schedule Section*/}
-      <Schedule></Schedule>
+
+      {/* Schedule Section (seperate component in /components/schedule.jsx) */}
+      <div className="relative z-10 mt-[50px]"> 
+        <Schedule />
+      </div>
+
 
       {/* Venue + Accessibility Section*/}
       <div className="flex p-[100px_200px] flex-col justify-center items-center gap-[60px] self-stretch">
@@ -131,8 +136,12 @@ const Home = () => {
             academic milestones, thought-provoking discussions.
             <div className="mt-2">
               <br></br>
-              <span className="hover:text-[#B1A8B3] cursor-pointer text-[#FF0000]">Parking Information </span> |
-              <span className="hover:text-[#B1A8B3] cursor-pointer text-[#FF0000]"> Directions</span>
+              <a href="https://transportation.uw.edu/park" target="_blank" rel="noopener noreferrer">
+                <span className="hover:text-[#B1A8B3] cursor-pointer text-[#FF0000]">Parking Information </span>
+              </a> |
+              <a href="https://www.google.com/maps?q=4069+Spokane+Ln+NE,+Seattle,+WA+98105" target="_blank" rel="noopener noreferrer">
+                <span className="hover:text-[#B1A8B3] cursor-pointer text-[#FF0000]"> Directions</span>
+              </a>
             </div>
           </div>
         </div>
@@ -140,17 +149,26 @@ const Home = () => {
         <div className="flex flex-col items-end gap-[20px] self-stretch"> {/* Accessibility */}
           <div className="flex max-w-[1200px] flex-col items-end gap-[40px] self-stretch"> {/* Content Container */}
             <img
-              src="/src/resources/img/components/schedule/kane.png"
+              src="/src/resources/img/components/about/kane2.jpg"
               alt="Kane Hall"
-              className=""
+              className="flex h-[600px] max-w-[1200px] justify-end items-start gap-[10px] self-stretch rounded-[8px] object-cover"
             />
-            
+
+            <div className="flex items-start gap-[10px] self-stretch"> {/* Text */}
+              <div className="flex-1 text-[#FDFCFD] font-[ABC Favorit Variable Edu] text-[44px] font-bold leading-[50px] tracking-[-0.88px]">
+                Accessibility
+              </div>
+              <div className="w-[525px] text-[#FDFCFD] font-[ABC Favorit Variable Edu] text-[24px] font-medium leading-[28px] tracking-[-0.24px]">
+                The venue provides adequate accommodations for those in need of wheelchair seating or closed captions. Please email tedxuofw@uw.edu if you require further accommodations.
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
 
 
+      {/* Sponsors Section (seperate component in /components/home-sponsors.jsx) */}
+      <Sponsors/>
       
     </div>
   )
