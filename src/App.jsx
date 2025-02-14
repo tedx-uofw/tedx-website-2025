@@ -3,6 +3,9 @@ import { useEffect, useState, Suspense } from 'react'
 import Lenis from '@studio-freight/lenis'
 import RootLayout from './layouts/RootLayout'
 import Home from './pages/Home'
+import SpeakerPage from "./pages/Speakers/SpeakerPage";
+import Sponsors from './pages/Sponsors/Sponsors';
+
 
 function LoadingScreen() {
   return (
