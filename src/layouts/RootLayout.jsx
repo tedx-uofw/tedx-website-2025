@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom'
 import { Suspense } from 'react'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+
 
 function LoadingScreen() {
   return (
