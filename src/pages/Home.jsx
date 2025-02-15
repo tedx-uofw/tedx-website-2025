@@ -61,7 +61,7 @@ const Home = () => {
             <source src="/src/resources/img/components/about/home-background-vid.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-[#080808] to-[rgba(3,0,31,0)] pointer-events-none"> {/* Overlay (to darken video) */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[rgb(0,0,7)] to-[#2a218000] pointer-events-none"> {/* Overlay (to darken video) */}
           </div>
         </div>
         {/* Hero Nav */}
