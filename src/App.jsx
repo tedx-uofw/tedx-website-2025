@@ -107,7 +107,9 @@ function App() {
             <Route path="speakers" element={
               <SpeakerPage/>
             } />
-            <Route path="team" element={<Team />} />
+            <Route path="team" element={
+              <Team />
+            } />
             <Route path="sponsors" element={
               <Sponsors/>
             } />
