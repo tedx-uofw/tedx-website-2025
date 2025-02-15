@@ -88,12 +88,11 @@ const Footer = () => {
           </div>
 
           {/* Bottom Section */}
-          <div className="mt-16 flex flex-wrap justify-between items-center gap-4">
-            <div className="flex flex-col md:flex-row gap-2">
-              <p className="text-white">©TEDxUofW 2025 | Resonance</p>
-              <span className="hidden md:inline text-white">|</span>
-              <p className="text-white text-sm">This independent TEDx event is operated under license from TED.</p>
-            </div>
+          <div className="flex flex-wrap justify-between items-center gap-4">
+          <div className="mt-3 flex flex-col gap-2 w-full">
+            <p className="text-white">©TEDxUofW 2025 | Resonance</p>
+            <p className="text-white text-sm">This independent TEDx event is operated under license from TED.</p>
+          </div>
 
             {/* Social Links */}
             <div className="w-full md:w-auto">
