@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useLayoutEffect } from 'react'
 import Image from './Image'
-import Logo from '../resources/img/logos/Logo.png'
 import ResonanceGif from '../resources/img/components/footer/resonance-footer.gif'
 
 const Footer = () => {
@@ -51,7 +50,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <Link to="/" className="block">
                 <Image 
-                  src={Logo} 
+                  src="/logos/Logo.png"
                   alt="TEDx UofW"
                   width={240}
                   height={62}
