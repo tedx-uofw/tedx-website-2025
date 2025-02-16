@@ -87,10 +87,10 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className="flex px-[100px] py-[120px] items-end gap-[100px] self-stretch bg-[#0C0133]">
+      <section className="flex px-[100px] py-[120px] items-end gap-[100px] self-stretch bg-[#0C0634]">
         <div className="w-[480px] h-[480px]"> {/* Animation */}
           <video className="w-full h-full object-cover" autoPlay loop muted>
-            <source src="/src/resources/img/components/about/nervous-dots2.mp4" type="video/mp4" />
+            <source src="/src/resources/img/components/about/nervous-dots3.mp4" type="video/mp4" />
           </video>
         </div>
         
