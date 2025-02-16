@@ -2,8 +2,10 @@ import React from "react";
 
 export default function TeamHero() {
     return (
+        <div className="relative min-h-[100svh] -mt-[72px] md:-mt-[72px] lg:-mt-[88px] xl:-mt-[138px]">
         <div
-            className="absolute top-0 left-0 w-full h-[1000px] flex flex-col justify-end items-start p-[400px_200px_100px] gap-[10px] bg-[#0C0133] isolate"
+            className="flex flex-row items-end pt-[88px] px-[200px] pb-[100px] gap-[40px]
+        w-full min-h-screen left-0 top-0 bg-[#0C0133]"
             style={{
                 backgroundImage: "url('/team/leavedot.png')",
                 backgroundSize: "cover",
@@ -27,6 +29,7 @@ export default function TeamHero() {
                     See teams of copresidents, design, marketing, blah blah blah....
                 </div>
             </div>
+        </div>
         </div>
     )
 }
