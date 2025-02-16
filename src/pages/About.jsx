@@ -19,7 +19,7 @@ export default function About() {
 
                 <div className="flex flex-col items-start gap-[32px] self-stretch">{/* Text Container */}
                     <div className="w-[314.455px] h-[80px]">
-                        <img src="/src/resources/img/logos/Logo.png" alt="Logo" className="w-full h-full object-contain" />
+                        <img src="/logos/Logo.png" alt="Logo" className="w-full h-full object-contain" />
                     </div>
 
                     <div className="flex flex-col items-start gap-[60px] self-stretch">{/* Caption */}
