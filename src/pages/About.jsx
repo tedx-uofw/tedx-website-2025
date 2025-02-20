@@ -2,7 +2,7 @@ export default function About() {
     return (
         <div className="relative min-h-[100svh] -mt-[72px] md:-mt-[72px] lg:-mt-[88px] xl:-mt-[138px]">
             <div className="flex w-[1920px] h-[1060px] p-[200px] flex-col justify-center items-start gap-[40px] flex-shrink-0 bg-cover bg-center" 
-                style={{ backgroundImage: "url('/src/resources/img/components/about/bgimage.png')" }}> {/* Body */}
+                style={{ backgroundImage: "url('/about/bgimage.png')" }}> {/* Body */}
 
                 <div className="flex justify-between items-center self-stretch"> {/* Top */}
                     <div className="flex items-start gap-[4px]"> {/* Frame 628 */}
@@ -19,7 +19,7 @@ export default function About() {
 
                 <div className="flex flex-col items-start gap-[32px] self-stretch">{/* Text Container */}
                     <div className="w-[314.455px] h-[80px]">
-                        <img src="/src/resources/img/logos/Logo.png" alt="Logo" className="w-full h-full object-contain" />
+                        <img src="/logos/Logo.png" alt="Logo" className="w-full h-full object-contain" />
                     </div>
 
                     <div className="flex flex-col items-start gap-[60px] self-stretch">{/* Caption */}

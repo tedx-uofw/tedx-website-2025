@@ -11,7 +11,7 @@ const Sponsors = () => {
                 {/* Sponsor Card 1 */}
                 <div class="flex min-w-[412px] py-[100px] flex-col justify-center items-center gap-[10px] flex-1 rounded-[16px] bg-[#0C0133]">
                     <img
-                        src="/src/resources/img/components/home-sponsors/asuw.png"
+                        src="/sponsors/asuw.png"
                         alt="Sponsor 1"
                         className="w-[200px] h-[60px]"
                     />
@@ -19,7 +19,7 @@ const Sponsors = () => {
                 {/* Sponsor Card 2 */}
                 <div class="flex min-w-[412px] py-[100px] flex-col justify-center items-center gap-[10px] flex-1 rounded-[16px] bg-[#0C0133]">
                     <img
-                        src="/src/resources/img/components/home-sponsors/asuw.png"
+                        src="/sponsors/asuw.png"
                         alt="Sponsor 2"
                         className="w-[200px] h-[60px]"
                     />
@@ -27,7 +27,7 @@ const Sponsors = () => {
                 {/* Sponsor Card 3 */}
                 <div class="flex min-w-[412px] py-[100px] flex-col justify-center items-center gap-[10px] flex-1 rounded-[16px] bg-[#0C0133]">
                     <img
-                        src="/src/resources/img/components/home-sponsors/asuw.png"
+                        src="/sponsors/asuw.png"
                         alt="Sponsor 3"
                         className="w-[200px] h-[60px]"
                     />
@@ -35,7 +35,7 @@ const Sponsors = () => {
                 {/* Sponsor Card 4 */}
                 <div class="flex min-w-[412px] py-[100px] flex-col justify-center items-center gap-[10px] flex-1 rounded-[16px] bg-[#0C0133]">
                     <img
-                        src="/src/resources/img/components/home-sponsors/asuw.png"
+                        src="/sponsors/asuw.png"
                         alt="Sponsor 4"
                         className="w-[200px] h-[60px]"
                     />
@@ -43,7 +43,7 @@ const Sponsors = () => {
                 {/* Sponsor Card 5 */}
                 <div class="flex min-w-[412px] py-[100px] flex-col justify-center items-center gap-[10px] flex-1 rounded-[16px] bg-[#0C0133]">
                     <img
-                        src="/src/resources/img/components/home-sponsors/asuw.png"
+                        src="/sponsors/asuw.png"
                         alt="Sponsor 5"
                         className="w-[200px] h-[60px]"
                     />
@@ -51,7 +51,7 @@ const Sponsors = () => {
                 {/* Sponsor Card 6 */}
                 <div class="flex min-w-[412px] py-[100px] flex-col justify-center items-center gap-[10px] flex-1 rounded-[16px] bg-[#0C0133]">
                     <img
-                        src="/src/resources/img/components/home-sponsors/asuw.png"
+                        src="/sponsors/asuw.png"
                         alt="Sponsor 6"
                         className="w-[200px] h-[60px]"
                     />
