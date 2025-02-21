@@ -28,11 +28,11 @@ export default function SpeakerHero() {
             Seven speakers from around the Seattle community will join us at TEDxUofW Resonance 2025 to share how they’re inspiring, thinking, what they’re sharing with the community, and what’s next.
           </div>
 
-          <div className="w-[1090px] h-[68px] font-[ABC Favorit Variable Edu] font-normal not-italic text-[28px] leading-[34px] tracking-[-0.01em] text-[#FFFFFF] order-2">
-            Attendees will leave feeling more connected to a community of builders and to the future of community leaders inspiring change.
-          </div>
+
+            <div className="w-[1090px] h-[68px] font-[ABC Favorit Variable Edu] font-normal not-italic text-[28px] leading-[34px] tracking-[-0.01em] text-[#FFFFFF] order-2">
+              Attendees will leave feeling more connected to a community of builders and to the future of community leaders inspiring change.
+            </div>
         </div>
-        
       </div>
   )
 }

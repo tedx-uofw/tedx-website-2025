@@ -1,6 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Logo from '../resources/img/logos/Logo.png'
 import Image from './Image'
 
 const MenuButton = ({ isOpen, onClick }) => (
@@ -221,7 +220,7 @@ const Navbar = () => {
                 <Link to="/" className="block group">
                   <div className="scale-[0.666] md:scale-[0.666] lg:scale-[0.833] xl:scale-1 origin-left">
                     <Image 
-                      src={Logo} 
+                      src="/logos/Logo.png"
                       alt="TEDx UofW"
                       className="transition-all duration-300 group-hover:opacity-60"
                       width={187}

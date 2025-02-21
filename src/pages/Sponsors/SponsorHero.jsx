@@ -32,7 +32,6 @@ export default function SponsorHero() {
                 Attendees will leave feeling more connected to a community of builders and to the future of community leaders inspiring change.
             </div>
         </div>
-      
     </div>
   )
 }

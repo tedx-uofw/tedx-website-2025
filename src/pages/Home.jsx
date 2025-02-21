@@ -58,10 +58,10 @@ const Home = () => {
         {/* Background Video */}
         <div className="relative w-full h-[1060px]">
           <video className="w-full h-full object-cover m-0 p-0" autoPlay loop muted>
-            <source src="/src/resources/img/components/about/home-background-vid.mp4" type="video/mp4" />
+            <source src="/about/home-background-vid.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 bg-gradient-to-b from-[#080808] to-[rgba(3,0,31,0)] pointer-events-none"> {/* Overlay (to darken video) */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[rgb(0,0,7)] to-[#2a218000] pointer-events-none"> {/* Overlay (to darken video) */}
           </div>
         </div>
         {/* Hero Nav */}
@@ -87,10 +87,10 @@ const Home = () => {
 
 
       {/* About Section */}
-      <section className="flex px-[100px] py-[120px] items-end gap-[100px] self-stretch bg-[#0C0133]">
+      <section className="flex px-[100px] py-[120px] items-end gap-[100px] self-stretch bg-[#0C0634]">
         <div className="w-[480px] h-[480px]"> {/* Animation */}
           <video className="w-full h-full object-cover" autoPlay loop muted>
-            <source src="/src/resources/img/components/about/nervous-dots.mp4" type="video/mp4" />
+            <source src="/about/nervous-dots3.mp4" type="video/mp4" />
           </video>
         </div>
         
@@ -111,7 +111,7 @@ const Home = () => {
       <div className="h-[800px] flex flex-col items-center self-stretch bg-[#080808]">
         <div className="w-full flex justify-center bg-[#080808]">
           <video className="w-full m-0 p-0" autoPlay loop muted>
-            <source src="/src/resources/img/components/about/cinematic-flares.mp4" type="video/mp4" />
+            <source src="/about/cinematic-flares.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -149,7 +149,7 @@ const Home = () => {
         <div className="flex flex-col items-end gap-[20px] self-stretch"> {/* Accessibility */}
           <div className="flex max-w-[1200px] flex-col items-end gap-[40px] self-stretch"> {/* Content Container */}
             <img
-              src="/src/resources/img/components/about/kane2.jpg"
+              src="/about/kane2.jpg"
               alt="Kane Hall"
               className="flex h-[600px] max-w-[1200px] justify-end items-start gap-[10px] self-stretch rounded-[8px] object-cover"
             />

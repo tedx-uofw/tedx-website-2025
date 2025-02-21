@@ -5,7 +5,9 @@ import RootLayout from './layouts/RootLayout'
 import Home from './pages/Home'
 import SpeakerPage from "./pages/Speakers/SpeakerPage";
 import Sponsors from './pages/Sponsors/Sponsors';
+import About from './pages/About';
 
+import Team from './pages/Team/Team'
 
 function LoadingScreen() {
   return (
@@ -106,19 +108,13 @@ function App() {
               <SpeakerPage/>
             } />
             <Route path="team" element={
-              <div className="container mx-auto px-4 py-8 font-favorit">
-                <h1 className="text-4xl font-bold mb-8">Our Team</h1>
-                <p className="text-gray-300">Coming soon...</p>
-              </div>
+              <Team />
             } />
             <Route path="sponsors" element={
               <Sponsors/>
             } />
             <Route path="about" element={
-              <div className="container mx-auto px-4 py-8 font-favorit">
-                <h1 className="text-4xl font-bold mb-8">About TEDx 2025</h1>
-                <p className="text-gray-300">Coming soon...</p>
-              </div>
+              <About/>
             } />
           </Route>
         </Routes>

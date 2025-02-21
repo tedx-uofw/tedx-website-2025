@@ -8,7 +8,7 @@ const Schedule = () => {
                 <div className="flex items-center gap-6 self-stretch py-8"> {/* Body */}
                     <div className="flex w-[180px] h-[100px] p-[36px] justify-center items-center gap-[12px]"> {/* Schedule Icon */}
                         <img
-                            src="/src/resources/img/components/schedule/Ring.svg"
+                            src="/schedule/Ring.svg"
                             alt="Ring"
                             className="w-[24px] h-[24px] flex-shrink-0"
                         />
@@ -34,7 +34,7 @@ const Schedule = () => {
             <div className="flex flex-col justify-end items-start gap-2 self-stretch"> {/* Schedule Block */}
                 <div className="flex items-center gap-6 self-stretch py-8"> {/* Body */}
                     <img
-                        src="/src/resources/img/components/schedule/schedule-placeholder-img.png"
+                        src="/schedule/schedule-placeholder-img.png"
                         alt="Ring"
                         className="w-[180px] h-[180px]"
                     />
@@ -76,7 +76,7 @@ const Schedule = () => {
                 <div className="flex items-center gap-6 self-stretch py-8"> {/* Body */}
                     <div className="flex w-[180px] h-[100px] p-[36px] justify-center items-center gap-[12px]"> {/* Schedule Icon */}
                         <img
-                            src="/src/resources/img/components/schedule/Ring5.svg"
+                            src="/schedule/Ring5.svg"
                             alt="Ring"
                             className="w-[40px] h-[40px] flex-shrink-0"
                         />
@@ -103,7 +103,7 @@ const Schedule = () => {
                 <div className="flex items-center gap-6 self-stretch py-8"> {/* Body */}
                     <div className="flex w-[180px] h-[100px] p-[36px] justify-center items-center gap-[12px]"> {/* Schedule Icon */}
                         <img
-                            src="/src/resources/img/components/schedule/Ring2.svg"
+                            src="/schedule/Ring2.svg"
                             alt="Ring"
                             className="w-[60px] h-[60px] flex-shrink-0"
                         />
@@ -130,7 +130,7 @@ const Schedule = () => {
                 <div className="flex items-center gap-6 self-stretch py-8"> {/* Body */}
                     <div className="flex w-[180px] h-[100px] p-[36px] justify-center items-center gap-[12px]"> {/* Schedule Icon */}
                         <img
-                            src="/src/resources/img/components/schedule/Ring3.svg"
+                            src="/schedule/Ring3.svg"
                             alt="Ring"
                             className="w-[96px] h-[21px] flex-shrink-0"
                         />
@@ -157,7 +157,7 @@ const Schedule = () => {
                 <div className="flex items-center gap-6 self-stretch py-8"> {/* Body */}
                     <div className="flex w-[180px] h-[100px] p-[36px] justify-center items-center gap-[12px]"> {/* Schedule Icon */}
                         <img
-                            src="/src/resources/img/components/schedule/Ring4.svg"
+                            src="/schedule/Ring4.svg"
                             alt="Ring"
                             className="w-[80px] h-[80px] flex-shrink-0"
                         />
@@ -184,7 +184,7 @@ const Schedule = () => {
                 <div className="flex items-center gap-6 self-stretch py-8"> {/* Body */}
                     <div className="flex w-[180px] h-[100px] p-[36px] justify-center items-center gap-[12px]"> {/* Schedule Icon */}
                         <img
-                            src="/src/resources/img/components/schedule/Ring6.svg"
+                            src="/schedule/Ring6.svg"
                             alt="Ring"
                             className="w-[80px] h-[80px] flex-shrink-0"
                         />
@@ -211,7 +211,7 @@ const Schedule = () => {
                 <div className="flex items-center gap-6 self-stretch py-8"> {/* Body */}
                     <div className="flex w-[180px] h-[100px] p-[36px] justify-center items-center gap-[12px]"> {/* Schedule Icon */}
                         <img
-                            src="/src/resources/img/components/schedule/Ring4.svg"
+                            src="/schedule/Ring4.svg"
                             alt="Ring"
                             className="w-[100px] h-[100px] flex-shrink-0"
                         />
