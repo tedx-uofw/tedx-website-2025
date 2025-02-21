@@ -3,10 +3,10 @@ import React from 'react'
 export default function SpeakerHero() {
   return (
     <div className="flex flex-row items-end pt-[88px] px-[200px] pb-[100px] gap-[40px]
-      w-full min-h-screen left-0 top-0 bg-[#0C0133]
+      w-full min-h-screen left-0 top-0
       "
       style={{
-        backgroundImage: "url('/speakers/leavedot.png')",
+        backgroundImage: "url('/speakers/speakerbg.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -15,7 +15,7 @@ export default function SpeakerHero() {
       }}
         
       >
-        <div className="flex flex-col items-start p-0 gap-[20px] w-[1520px] h-[332px] mix-blend-normal">
+        <div className="flex flex-col items-start p-0 gap-[20px] w-[1520px] h-[332px]">
           <div className="flex flex-row items-center p-0 gap-[15px] w-[145px] h-[24px]">
             <span> ⚪️ </span>
             <p className="w-[119px] h-[24px] font-[ABC Favorit Mono Variable Edu] font-normal text-[20px]
