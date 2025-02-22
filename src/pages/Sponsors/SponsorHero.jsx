@@ -2,17 +2,18 @@ import React from 'react'
 
 export default function SponsorHero() {
   return (
-    <div className='flex flex-col justify-end items-start px-[100px] pt-[300px] pb-[100px]
-    gap-[10px] w-full min-h-screen left-0 top-0 
-    '
-    style={{
-        backgroundImage: "url(/sponsors/sponsorbg.png)",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundBlendMode:'multiply',
-        zIndex: -1,
-    }}
+    <div className="relative min-h-[100svh] -mt-[72px] md:-mt-[72px] lg:-mt-[88px] xl:-mt-[138px]">
+      <div className="flex flex-row items-end pt-[88px] px-[200px] pb-[100px] gap-[40px]
+        w-full min-h-[100svh] relative left-0 top-0 
+        "
+        style={{
+          backgroundImage: "url('/speakers/speakerbg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundBlendMode: 'multiply',
+          zIndex: -1,
+        }}
     >
         <div className='flex flex-col items-start p-0 gap-[20px] w-[1520px] h-[216px] order-1 flex-grow-0'>
             <div className='flex flex-row items-center p-0 gap-[15px] w-[121px] h-[24px]'>
@@ -32,6 +33,7 @@ export default function SponsorHero() {
                 Attendees will leave feeling more connected to a community of builders and to the future of community leaders inspiring change.
             </div>
         </div>
+    </div>
     </div>
   )
 }
