@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import HeroDots from '../components/HeroDots'
 
 const HeroNav = () => {
   const handleCalendarClick = () => {
@@ -52,21 +53,34 @@ const Home = () => {
   return (
     <div className="space-y-16 font-favorit">
       {/* Hero Section */}
-      <div className="relative min-h-[100svh] -mt-[72px] md:-mt-[72px] lg:-mt-[88px] xl:-mt-[138px]">
-        {/* Background div for future animation */}
-        <div className="absolute inset-0 bg-gradient-to-r from-bg-default to-bg-footer pointer-events-none" />
+      <div className="relative min-h-[100svh] -mt-[72px] md:-mt-[72px] lg:-mt-[88px] xl:-mt-[138px] bg-black">
+        {/* HeroDots Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <HeroDots
+            dotSize={10}
+            dotColor={"white"}
+            maxDotSize={30}
+            distanceThreshold={10}
+            dotSpacing={30}
+            gridRows={55}
+            gridColumns={55}
+            smoothFactor={0.5}
+            shape={"circle"}
+            enableLookAt={true}
+          />
+        </div>
         
         {/* Hero Nav */}
         <HeroNav />
         
         {/* Content */}
-        <div className="absolute bottom-[40px] sm:bottom-[60px] px-6 md:px-12 lg:px-[100px] xl:px-[100px] w-full">
-          <div className="flex flex-col gap-y-4 sm:gap-y-6 max-w-[90%] md:max-w-2xl">
-            <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] font-bold leading-tight">Resonance</h1>
-            <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl max-w-2xl font-semibold leading-snug">
+        <div className="absolute bottom-[60px] px-6 md:px-12 lg:px-[100px] xl:px-[100px] w-full">
+          <div className="flex flex-col gap-y-6 max-w-[90%] md:max-w-2xl">
+            <h1 className="text-[48px] md:text-[64px] lg:text-[80px] font-bold leading-tight">Resonance</h1>
+            <p className="text-2xl md:text-3xl lg:text-4xl max-w-2xl font-semibold">
               Reflects the idea that a single action or idea can echo and shape the world, leaving a lasting impact.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-10 mt-2">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-10">
               <Link to="/buy" className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff] text-center">
                 BUY TICKETS
               </Link>

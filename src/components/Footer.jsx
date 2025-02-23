@@ -56,7 +56,7 @@ const Footer = () => {
                   width={240}
                   height={62}
                   layout="constrained"
-                  priority={false}
+                  priority="false"
                   background="transparent"
                   className="max-w-[15rem] md:max-w-[10rem] lg:max-w-[15rem]"
                 />
