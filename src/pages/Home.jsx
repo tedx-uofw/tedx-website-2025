@@ -1,9 +1,9 @@
 import Schedule from '../components/schedule';
-import Sponsors from '../components/home-sponsors';
 import HeroSection from '../components/HomePage/HeroSection';
 import AboutSection from '../components/HomePage/AboutSection';
 import VideoSection from '../components/HomePage/VideoSection';
 import VenueAndAccessibilitySection from '../components/HomePage/VenueAndAccessibilitySection';
+import SponsorsSection from '../components/HomePage/SponsorsSection';
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
         <Schedule />
       </div>
       <VenueAndAccessibilitySection />
-      <Sponsors />
+      <SponsorsSection />
     </div>
   );
 };
