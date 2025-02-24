@@ -8,7 +8,7 @@ fi
 
 INPUT_FILE="$1"
 FILENAME=$(basename "$INPUT_FILE" .mp4)
-OUTPUT_DIR="public/about/hls/$FILENAME"
+OUTPUT_DIR="../public/about/hls/$FILENAME"
 SEGMENT_TIME=6
 
 # Create output directory
@@ -35,7 +35,7 @@ ffmpeg -i "$INPUT_FILE" \
     "$OUTPUT_DIR/stream_%v.m3u8"
 
 # Create a symbolic link to the master playlist with the original filename
-ln -sf "$OUTPUT_DIR/master.m3u8" "public/about/$FILENAME.m3u8"
+ln -sf "$OUTPUT_DIR/master.m3u8" "../public/about/$FILENAME.m3u8"
 
 echo "Conversion complete! Files are in $OUTPUT_DIR"
-echo "Master playlist is available at: public/about/$FILENAME.m3u8" 
+echo "Master playlist is available at: ../public/about/$FILENAME.m3u8" 
