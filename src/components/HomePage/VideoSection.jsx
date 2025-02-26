@@ -4,6 +4,7 @@ const VideoSection = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [hasInteracted, setHasInteracted] = useState(false);
   const [isInView, setIsInView] = useState(false);
+  const [isPlayerReady, setIsPlayerReady] = useState(false);
   const sectionRef = useRef(null);
   const playerRef = useRef(null);
 
@@ -11,6 +12,10 @@ const VideoSection = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsInView(entry.isIntersecting);
+        // Pause video when out of view
+        if (!entry.isIntersecting && playerRef.current && isPlayerReady) {
+          playerRef.current.pauseVideo();
+        }
       },
       {
         root: null,
@@ -24,10 +29,10 @@ const VideoSection = () => {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [isPlayerReady]);
 
   useEffect(() => {
-    if (!isInView || hasInteracted) return;
+    if (hasInteracted) return;
 
     // Initialize player when API is ready
     const initPlayer = () => {
@@ -41,7 +46,10 @@ const VideoSection = () => {
           playsinline: 1,
         },
         events: {
-          onReady: () => setIsLoading(false),
+          onReady: () => {
+            setIsLoading(false);
+            setIsPlayerReady(true);
+          },
         }
       });
     };
@@ -68,7 +76,7 @@ const VideoSection = () => {
     return () => {
       window.onYouTubeIframeAPIReady = null;
     };
-  }, [isInView, hasInteracted]);
+  }, [hasInteracted]);
 
   const handleInitialPlay = () => {
     if (!hasInteracted && playerRef.current) {
@@ -91,32 +99,30 @@ const VideoSection = () => {
 
       {/* Video Container */}
       <div className="relative w-full max-w-[2000px] mx-auto aspect-video">
-        {isInView && (
-          <>
-            {!hasInteracted && (
-              <div className="absolute inset-0 z-10">
-                <img 
-                  src="/about/video-poster.jpg" 
-                  alt="Video thumbnail" 
-                  className="w-full h-full object-cover"
-                />
-                <button
-                  className="absolute inset-0 flex items-center justify-center bg-black/50"
-                  onClick={handleInitialPlay}
-                >
-                  <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors">
-                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 5v14l11-7z" fill="white"/>
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            )}
-            <div className={`w-full h-full ${!hasInteracted ? 'invisible' : ''}`}>
-              <div id="youtube-player" className="w-full h-full"></div>
+        <>
+          {!hasInteracted && (
+            <div className="absolute inset-0 z-10">
+              <img 
+                src="/about/video-poster.jpg" 
+                alt="Video thumbnail" 
+                className="w-full h-full object-cover"
+              />
+              <button
+                className="absolute inset-0 flex items-center justify-center bg-black/50"
+                onClick={handleInitialPlay}
+              >
+                <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors">
+                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5v14l11-7z" fill="white"/>
+                  </svg>
+                </div>
+              </button>
             </div>
-          </>
-        )}
+          )}
+          <div className={`w-full h-full ${!hasInteracted ? 'invisible' : ''}`}>
+            <div id="youtube-player" className="w-full h-full"></div>
+          </div>
+        </>
       </div>
     </section>
   );
