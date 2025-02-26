@@ -16,7 +16,7 @@ const VenueAndAccessibilitySection = () => {
               href="https://transportation.uw.edu/park" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-[#FF0000] hover:text-[#B1A8B3] transition-colors"
+              className="text-white underline hover:text-[#B1A8B3] transition-colors"
             >
               Parking Information
             </a>
@@ -25,7 +25,7 @@ const VenueAndAccessibilitySection = () => {
               href="https://www.google.com/maps?q=4069+Spokane+Ln+NE,+Seattle,+WA+98105" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-[#FF0000] hover:text-[#B1A8B3] transition-colors"
+              className="text-white underline hover:text-[#B1A8B3] transition-colors"
             >
               Directions
             </a>

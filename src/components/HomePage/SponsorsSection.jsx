@@ -9,58 +9,66 @@ const SponsorsSection = () => {
       </div>
 
       {/* Sponsor Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full">
-        {/* Sponsor Card 1 */}
-        <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+      <div className="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-4 sm:gap-6 md:gap-8 w-full">
+        {/* Sponsor Card 1 - Large */}
+        <div className="col-span-4 sm:col-span-8 lg:col-span-12 flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
           <img
             src="/sponsors/asuw.png"
             alt="ASUW"
-            className="w-[160px] sm:w-[180px] md:w-[200px] h-auto object-contain"
+            className="w-[240px] sm:w-[280px] md:w-[320px] h-auto object-contain"
           />
         </div>
 
-        {/* Sponsor Card 2 */}
-        <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+        {/* Sponsor Card 2 - Medium */}
+        <div className="col-span-4 sm:col-span-4 lg:col-span-6 flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
           <img
             src="/sponsors/asuw.png"
             alt="ASUW"
-            className="w-[160px] sm:w-[180px] md:w-[200px] h-auto object-contain"
+            className="w-[150px] sm:w-[165px] md:w-[180px] h-auto object-contain"
           />
         </div>
 
-        {/* Sponsor Card 3 */}
-        <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+        {/* Sponsor Card 3 - Medium */}
+        <div className="col-span-4 sm:col-span-4 lg:col-span-6 flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
           <img
             src="/sponsors/asuw.png"
             alt="ASUW"
-            className="w-[160px] sm:w-[180px] md:w-[200px] h-auto object-contain"
+            className="w-[150px] sm:w-[165px] md:w-[180px] h-auto object-contain"
           />
         </div>
 
-        {/* Sponsor Card 4 */}
-        <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+        {/* Sponsor Card 4 - Small */}
+        <div className="col-span-2 sm:col-span-4 lg:col-span-4 flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
           <img
             src="/sponsors/asuw.png"
             alt="ASUW"
-            className="w-[160px] sm:w-[180px] md:w-[200px] h-auto object-contain"
+            className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
           />
         </div>
 
-        {/* Sponsor Card 5 */}
-        <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+        {/* Sponsor Card 5 - Small */}
+        <div className="col-span-2 sm:col-span-4 lg:col-span-4 flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
           <img
             src="/sponsors/asuw.png"
             alt="ASUW"
-            className="w-[160px] sm:w-[180px] md:w-[200px] h-auto object-contain"
+            className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
           />
         </div>
 
-        {/* Sponsor Card 6 */}
-        <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+        {/* Sponsor Card 6 - Small */}
+        <div className="col-span-2 sm:col-span-4 lg:col-span-4 flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
           <img
             src="/sponsors/asuw.png"
             alt="ASUW"
-            className="w-[160px] sm:w-[180px] md:w-[200px] h-auto object-contain"
+            className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
+          />
+        </div>
+        {/* Sponsor Card 7 - Small */}
+        <div className="col-span-2 sm:col-span-4 lg:col-span-4 flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          <img
+            src="/sponsors/asuw.png"
+            alt="ASUW"
+            className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
           />
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SpeakerCardDescription({description}) {
   return (
-    <div className="w-[740px] min-w-[400px] h-[268px] text-[#FDFCFD] font-[ABC Favorit Variable Edu] text-base leading-[22px] flex-none order-1 flex-grow">
+    <div className="w-full lg:w-[740px] text-[#FDFCFD] font-abc-favorit-variable-edu text-base sm:text-lg leading-[22px] sm:leading-[26px] md:leading-[28px]">
       {description}
     </div>
   )

@@ -10,9 +10,9 @@ const AboutSection = () => {
       
       {/* Text Container */}
       <div className="flex flex-col items-start gap-4 md:gap-6 lg:gap-[24px] flex-1">
-        <div className="text-[#FDFCFD] font-[ABC Favorit Variable Edu] text-2xl md:text-3xl lg:text-[36px] font-medium leading-tight md:leading-snug lg:leading-[48px] tracking-[-0.72px]">
+        {/* <div className="text-[#FDFCFD] font-[ABC Favorit Variable Edu] text-2xl md:text-3xl lg:text-[36px] font-medium leading-tight md:leading-snug lg:leading-[48px] tracking-[-0.72px]">
           (noun) A single action or idea can echo and shape the world, leaving a lasting impact.
-        </div>
+        </div> */}
 
         <div className="text-[#FDFCFD] font-[ABC Favorit Variable Edu] text-lg md:text-2xl lg:text-[28px] font-normal leading-snug md:leading-relaxed lg:leading-[34px] tracking-[-0.28px]">
           The way a single action, idea, or event emerges and continues to echo over time, creating waves that extend far beyond the initial moment. 

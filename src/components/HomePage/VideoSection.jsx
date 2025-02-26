@@ -1,13 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
-import Hls from 'hls.js';
 
 const VideoSection = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [hasInteracted, setHasInteracted] = useState(false);
   const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef(null);
-  const videoRef = useRef(null);
-  const hlsRef = useRef(null);
+  const playerRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,69 +26,56 @@ const VideoSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleInitialPlay = () => {
-    if (!hasInteracted && videoRef.current) {
-      setHasInteracted(true);
-      videoRef.current.play();
-    }
-  };
-
   useEffect(() => {
-    if (!isInView || !videoRef.current) return;
+    if (!isInView || hasInteracted) return;
 
-    const initHls = () => {
-      if (Hls.isSupported()) {
-        const hls = new Hls({
-          maxBufferSize: 30 * 1000 * 1000,
-          maxBufferLength: 60,
-          startLevel: -1,
-          debug: false
-        });
-
-        hlsRef.current = hls;
-        hls.attachMedia(videoRef.current);
-        hls.on(Hls.Events.MEDIA_ATTACHED, () => {
-          hls.loadSource('/about/hls/TEDxUofW Resonance Promotional Video/master.m3u8');
-        });
-
-        hls.on(Hls.Events.ERROR, (event, data) => {
-          if (data.fatal) {
-            switch (data.type) {
-              case Hls.ErrorTypes.NETWORK_ERROR:
-                console.log('Network error, trying to recover...');
-                hls.startLoad();
-                break;
-              case Hls.ErrorTypes.MEDIA_ERROR:
-                console.log('Media error, trying to recover...');
-                hls.recoverMediaError();
-                break;
-              default:
-                console.error('Fatal error:', data);
-                hls.destroy();
-                break;
-            }
-          }
-        });
-
-        hls.on(Hls.Events.MANIFEST_PARSED, () => {
-          setIsLoading(false);
-        });
-      } else if (videoRef.current.canPlayType('application/vnd.apple.mpegurl')) {
-        videoRef.current.src = '/about/hls/TEDxUofW Resonance Promotional Video/master.m3u8';
-        videoRef.current.addEventListener('loadedmetadata', () => {
-          setIsLoading(false);
-        });
-      }
+    // Initialize player when API is ready
+    const initPlayer = () => {
+      playerRef.current = new window.YT.Player('youtube-player', {
+        videoId: 'uRJ6P51vHHI',
+        playerVars: {
+          autoplay: 0,
+          controls: 1,
+          modestbranding: 1,
+          rel: 0,
+          playsinline: 1,
+        },
+        events: {
+          onReady: () => setIsLoading(false),
+        }
+      });
     };
 
-    initHls();
+    // If API is already loaded
+    if (window.YT && window.YT.Player) {
+      initPlayer();
+      return;
+    }
+
+    // Load YouTube IFrame API
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+
+    // Setup callback for when API is ready
+    window.onYouTubeIframeAPIReady = () => {
+      initPlayer();
+    };
+
+    // Add script to page
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     return () => {
-      if (hlsRef.current) {
-        hlsRef.current.destroy();
-      }
+      window.onYouTubeIframeAPIReady = null;
     };
-  }, [isInView]);
+  }, [isInView, hasInteracted]);
+
+  const handleInitialPlay = () => {
+    if (!hasInteracted && playerRef.current) {
+      setHasInteracted(true);
+      playerRef.current.playVideo();
+    }
+  };
 
   return (
     <section 
@@ -109,24 +94,27 @@ const VideoSection = () => {
         {isInView && (
           <>
             {!hasInteracted && (
-              <button
-                className="absolute inset-0 z-10 flex items-center justify-center bg-black/50"
-                onClick={handleInitialPlay}
-              >
-                <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 5v14l11-7z" fill="white"/>
-                  </svg>
-                </div>
-              </button>
+              <div className="absolute inset-0 z-10">
+                <img 
+                  src="/about/video-poster.jpg" 
+                  alt="Video thumbnail" 
+                  className="w-full h-full object-cover"
+                />
+                <button
+                  className="absolute inset-0 flex items-center justify-center bg-black/50"
+                  onClick={handleInitialPlay}
+                >
+                  <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors">
+                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 5v14l11-7z" fill="white"/>
+                    </svg>
+                  </div>
+                </button>
+              </div>
             )}
-            <video
-              ref={videoRef}
-              className="w-full h-full object-cover"
-              playsInline
-              poster="/about/video-poster.jpg"
-              controls={hasInteracted}
-            />
+            <div className={`w-full h-full ${!hasInteracted ? 'invisible' : ''}`}>
+              <div id="youtube-player" className="w-full h-full"></div>
+            </div>
           </>
         )}
       </div>
