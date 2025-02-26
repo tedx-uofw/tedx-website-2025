@@ -233,10 +233,10 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="hidden md:flex items-center justify-center space-x-8">
-                <Link to="/speakers" className="text-white hover:text-ted-red transition-colors">Speakers</Link>
-                <Link to="/team" className="text-white hover:text-ted-red transition-colors">Team</Link>
-                <Link to="/sponsors" className="text-white hover:text-ted-red transition-colors">Sponsors</Link>
-                <Link to="/about" className="text-white hover:text-ted-red transition-colors">About</Link>
+                <Link to="/speakers" className="text-white hover:text-[#E4E0E4] transition-colors">Speakers</Link>
+                <Link to="/team" className="text-white hover:text-[#E4E0E4] transition-colors">Team</Link>
+                {/* <Link to="/sponsors" className="text-white hover:text-[#E4E0E4] transition-colors">Sponsors</Link> */}
+                <Link to="/about" className="text-white hover:text-[#E4E0E4] transition-colors">About</Link>
               </div>
               <div className="flex items-center gap-4">
                 <div className="hidden md:block">

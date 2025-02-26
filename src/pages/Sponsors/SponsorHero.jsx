@@ -12,7 +12,7 @@ export default function SponsorHero() {
       }}
     >
       <div className="h-full w-full flex items-end">
-        <div className="flex flex-col items-start p-4 sm:p-6 md:p-12 lg:p-[200px] pb-[max(40px,calc(env(safe-area-inset-bottom)+24px))] sm:pb-[40px] gap-[20px] md:gap-[40px] w-full max-w-[1920px]">
+        <div className="flex flex-col items-start p-6 sm:p-6 md:p-12 lg:p-[100px] pb-[max(40px,calc(env(safe-area-inset-bottom)+24px))] sm:pb-[40px] gap-[20px] md:gap-[40px] w-full max-w-[1920px]">
           <div className="flex flex-row items-center gap-[15px]">
             <div className="w-[8px] h-[8px] sm:w-[11px] sm:h-[11px] bg-white rounded-[60px]"></div>
             <div className="text-white text-sm sm:text-lg md:text-xl lg:text-[20px] leading-tight sm:leading-snug md:leading-[24px] tracking-[-0.01em] font-normal whitespace-nowrap font-favorit-mono">

@@ -61,11 +61,13 @@ const speakers = [
 
 export default function SpeakerSection() {
   return (
-    <div className="flex flex-col items-start px-4 sm:px-6 md:px-[100px] lg:px-[200px] py-[100px] gap-[100px] w-full min-h-screen bg-[#080808]">
+    <div className="flex flex-col items-start px-6 sm:px-6 md:px-[100px] lg:px-[100px] py-[100px] gap-[100px] w-full min-h-screen bg-[#080808]">
       <SpeakerHeader header={'SPEAKERS'}/>
-      {speakers.map((speaker, index) => (
-        <SpeakerCard key={index} speaker={speaker}/>
-      ))}
+      <div className="flex flex-col items-start gap-[100px]">
+        {speakers.map((speaker, index) => (
+          <SpeakerCard key={index} speaker={speaker}/>
+        ))}
+      </div>
     </div>
   )
 }

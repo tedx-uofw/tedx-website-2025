@@ -20,13 +20,80 @@ export default function TeamSection() {
     }, []);
 
     const teamData = [
-        { section: "CO-PRESIDENTS", members: [...Array(3).fill({ image: "/team/model.jpeg", name: "Eddy Peng", major: "Informatics", role: "Design Director" })] },
-        { section: "DESIGN", members: [...Array(8).fill({ image: "/team/model.jpeg", name: "Eddy Peng", major: "Informatics", role: "Design Director" })] },
-        { section: "WEB DEVELOPMENT", members: [...Array(8).fill({ image: "/team/model.jpeg", name: "Eddy Peng", major: "Informatics", role: "Design Director" })] },
-        { section: "FINANCE", members: [...Array(8).fill({ image: "/team/model.jpeg", name: "Eddy Peng", major: "Informatics", role: "Design Director" })] },
-        { section: "LOGISTICS", members: [...Array(8).fill({ image: "/team/model.jpeg", name: "Eddy Peng", major: "Informatics", role: "Design Director" })] },
-        { section: "MARKETING", members: [...Array(9).fill({ image: "/team/model.jpeg", name: "Eddy Peng", major: "Informatics", role: "Design Director" })] },
-        { section: "SPEAKER SELECTION", members: [...Array(9).fill({ image: "/team/model.jpeg", name: "Eddy Peng", major: "Informatics", role: "Design Director" })] }
+        { 
+            section: "CO-PRESIDENTS", 
+            members: [
+                { name: "Leah Mathew", major: "Major", role: "Co-President", image: "/team/Team Pics/LeahMathew.png" }
+            ]
+        },
+        { 
+            section: "DESIGN", 
+            members: [
+                { name: "Emily Hao", major: "Major", role: "Design Director", image: "/team/Team Pics/EmilyHao.png" },
+                { name: "Stephanie Chou", major: "Major", role: "Design", image: "/team/Team Pics/StephanieChou.png" },
+                { name: "Chris Sanders", major: "Major", role: "Design", image: "/team/Team Pics/ChrisSanders.png" },
+                { name: "Addison Mercado", major: "Major", role: "Design", image: "/team/Team Pics/AddisonMercado.png" },
+                { name: "Michelle Nguyen", major: "Major", role: "Design", image: "/team/Team Pics/MichelleNguyen.png" }
+            ]
+        },
+        { 
+            section: "WEB DEVELOPMENT", 
+            members: [
+                { name: "Mehul Chaudhari", major: "Major", role: "Web Development Co-Director", image: "/team/Team Pics/MehulChaudhari.png" },
+                { name: "Nathan Daeila", major: "Major", role: "Web Development Co-Director", image: "/team/Team Pics/NathanDaeila.png" },
+                { name: "Ryan Cho", major: "Major", role: "Web Development", image: "/team/Team Pics/RyanCho.png" },
+                { name: "Sai Sunku", major: "Major", role: "Web Development", image: "/team/Team Pics/SaiSunku.png" },
+                { name: "Timothy Hoang", major: "Major", role: "Web Development", image: "/team/Team Pics/TimothyHoang.png" },
+                { name: "Thanh Trinh", major: "Major", role: "Web Development", image: "/team/Team Pics/ThanhTrinh.png" },
+            ]
+        },
+        { 
+            section: "FINANCE", 
+            members: [
+                { name: "Lillian Tran", major: "Major", role: "Finance Director", image: "/team/Team Pics/LillianTran.png" },
+                { name: "Kayla Pham", major: "Major", role: "Finance", image: "/team/Team Pics/KaylaPham.png" },
+                { name: "Ryann Phillips", major: "Major", role: "Finance", image: "/team/Team Pics/RyannPhillips.png" },
+                { name: "Reva Kulkarni", major: "Major", role: "Finance", image: "/team/Team Pics/RevaKulkarni.png" }
+            ]
+        },
+        { 
+            section: "LOGISTICS", 
+            members: [
+                { name: "Simran Kaur", major: "Major", role: "Logistics Co-Director", image: "/team/Team Pics/SimranKaur.png" },
+                { name: "Ryan Vu", major: "Major", role: "Logistics Co-Director", image: "/team/Team Pics/RyanVu.png" },
+                { name: "Hailey Yuan", major: "Major", role: "Logistics", image: "/team/Team Pics/HaileyYuan.png" },
+                { name: "Grace Townsend", major: "Major", role: "Logistics", image: "/team/Team Pics/GraceTownsend.png" },
+                { name: "Kayla Vo", major: "Major", role: "Logistics", image: "/team/Team Pics/KaylaVo.png" },
+                { name: "Mia McDunnah", major: "Major", role: "Logistics", image: "/team/Team Pics/MiaMcDunnah.png" },
+                { name: "Shubham Garg", major: "Major", role: "Logistics", image: "/team/Team Pics/ShubhamGarg.png" }
+            ]
+        },
+        { 
+            section: "MARKETING", 
+            members: [
+                { name: "Anya Pan", major: "Major", role: "Marketing Co-Director", image: "/team/Team Pics/AnyaPan.png" },
+                { name: "Karen Ensastegui Salazar", major: "Major", role: "Marketing Co-Director", image: "/team/Team Pics/KarenSalazar.png" },
+                { name: "Tara Kapur", major: "Major", role: "Marketing", image: "/team/Team Pics/TaraKapur.png" },
+                { name: "Vatsala Choudhary", major: "Major", role: "Marketing", image: "/team/Team Pics/VatsalaChoudhary.png" },
+                { name: "Ally Phan", major: "Major", role: "Marketing", image: "/team/Team Pics/AllyPhan.png" },
+                { name: "Gloria Ramirez- Hernandez", major: "Major", role: "Marketing", image: "/team/Team Pics/GloriaHernandez.png" },
+                { name: "Kitkat Villavicencio", major: "Major", role: "Marketing", image: "/team/Team Pics/KitkatVillavicencio.png" },
+                { name: "Isabella Truong", major: "Major", role: "Marketing", image: "/team/Team Pics/IsabellaTruong.png" }
+            ]
+        },
+        { 
+            section: "SPEAKER SELECTION", 
+            members: [
+                { name: "Tanishka Anandkumar", major: "Major", role: "Speaker Selection Co-Director", image: "/team/Team Pics/TanishkaAnandkumar.png" },
+                { name: "Diya Patel", major: "Major", role: "Speaker Selection Co-Director", image: "/team/Team Pics/DiyaPatel.png" },
+                { name: "Hirsh Garhwal", major: "Major", role: "Speaker Selection", image: "/team/Team Pics/HirshGarhwal.png" },
+                { name: "Radhika Kamran", major: "Major", role: "Speaker Selection", image: "/team/Team Pics/RadhikaKamran.png" },
+                { name: "Annissa Tan", major: "Major", role: "Speaker Selection", image: "/team/Team Pics/AnnissaTan.png" },
+                { name: "Sidhant Rauniyar", major: "Major", role: "Speaker Selection", image: "/team/Team Pics/SidhantRauniyar.png" },
+                { name: "Tatiana Miranda", major: "Major", role: "Speaker Selection", image: "/team/Team Pics/TatianaMiranda.png" },
+                { name: "Srimedha Thummala", major: "Major", role: "Speaker Selection", image: "/team/Team Pics/SrimedhaThummala.png" }
+            ]
+        }
     ];
 
     const selectedTeamData = teamData.find(team => team.section === selectedTeam);
