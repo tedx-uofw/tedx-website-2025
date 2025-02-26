@@ -241,9 +241,12 @@ const Navbar = () => {
               </div>
               <div className="flex items-center gap-4">
                 <div className="hidden md:block">
-                  <Link to="/buy" className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff]">
-                    BUY TICKETS
-                  </Link>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0u-Lo0mPZioUITqURZVAg2ys_2FKB3ZWOwY1yqz45PSlElQ/viewform" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff]">
+                  BUY TICKETS
+                </a>
                 </div>
                 <div className="block md:hidden">
                   <MenuButton isOpen={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)} />

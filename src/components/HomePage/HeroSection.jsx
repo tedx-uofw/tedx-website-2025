@@ -74,9 +74,13 @@ const HeroSection = () => {
                 Reflects the idea that a single action or idea can echo and shape the world, leaving a lasting impact.
               </p>
               <div className="flex flex-row gap-4 sm:gap-x-10 mt-2">
-                <Link to="/buy" className="rounded-[4px] bg-[#E4E0E4] text-black px-2 sm:px-4 py-2 text-md md:text-lg transition-colors hover:bg-[#ffffff] flex items-center justify-center">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0u-Lo0mPZioUITqURZVAg2ys_2FKB3ZWOwY1yqz45PSlElQ/viewform" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="rounded-[4px] bg-[#E4E0E4] text-black px-2 sm:px-4 py-2 text-md md:text-lg transition-colors hover:bg-[#ffffff] flex items-center justify-center">
                   BUY TICKETS
-                </Link>
+                </a>
+
                 <Link to="/about" className="rounded-[4px] border-[4px] border-dashed border-[#CBC4CC] text-white px-2 sm:px-4 py-2 text-md md:text-lg hover:bg-white/10 transition-colors text-center">
                   LEARN MORE
                 </Link>
