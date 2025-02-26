@@ -10,6 +10,7 @@ export default {
       'md': '768px',
       'lg': '1440px',
       'xl': '1920px',
+      'ios-safari': { raw: 'supports(-webkit-touch-callout: none)' }
     },
     extend: {
       colors: {
