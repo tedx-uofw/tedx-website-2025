@@ -76,11 +76,11 @@ function useResourcesLoaded() {
   return loaded;
 }
 
+export const lenis = new Lenis()
 function App() {
   const resourcesLoaded = useResourcesLoaded();
   
   useEffect(() => {
-    const lenis = new Lenis()
 
     function raf(time) {
       lenis.raf(time)
