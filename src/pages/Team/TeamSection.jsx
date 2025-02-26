@@ -32,7 +32,7 @@ export default function TeamSection() {
     const selectedTeamData = teamData.find(team => team.section === selectedTeam);
 
     return (
-        <div className="flex flex-col items-start w-full mt-[100px] p-[0px_200px_200px_200px] gap-[72px] bg-[#080808]">
+        <div className="flex flex-col items-start w-full mt-[100px] p-[0px_100px_200px] xl:p-[0px_200px_200px] gap-[72px] bg-[#080808]">
             <div className="flex flex-row justify-between items-center w-full h-[50px]">
                 <h1 className="min-w-[352px] h-[50px] font-[700] text-[44px] leading-[50px] tracking-[-0.02em] text-[#FDFCFD] font-favorit">
                     {selectedTeam}
