@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Image from './Image'
+import { lenis } from '../App';
 
 const MenuButton = ({ isOpen, onClick }) => (
   <button
@@ -173,6 +174,13 @@ const MenuOverlay = ({ isOpen, onClose }) => {
   );
 };
 
+function scrollToTop() {
+  lenis.scrollTo(0, 0, {
+    duration: 1, // Optional: Set a duration for the scroll animation (in seconds)
+    easing: (t) => t, // Optional: Define an easing function for smooth scrolling
+  });
+}
+
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [visible, setVisible] = useState(true)
@@ -228,21 +236,25 @@ const Navbar = () => {
                       layout="constrained"
                       priority="true"
                       background="transparent"
+                      onClick={scrollToTop}
                     />
                   </div>
                 </Link>
               </div>
               <div className="hidden md:flex items-center justify-center space-x-8">
-                <Link to="/speakers" className="text-white hover:text-[#E4E0E4] transition-colors">Speakers</Link>
-                <Link to="/team" className="text-white hover:text-[#E4E0E4] transition-colors">Team</Link>
-                {/* <Link to="/sponsors" className="text-white hover:text-[#E4E0E4] transition-colors">Sponsors</Link> */}
-                <Link to="/about" className="text-white hover:text-[#E4E0E4] transition-colors">About</Link>
+                <Link to="/speakers" className="text-white hover:text-ted-red transition-colors" onClick={scrollToTop}>Speakers</Link>
+                <Link to="/team" className="text-white hover:text-ted-red transition-colors" onClick={scrollToTop}>Team</Link>
+                <Link to="/sponsors" className="text-white hover:text-ted-red transition-colors" onClick={scrollToTop}>Sponsors</Link>
+                <Link to="/about" className="text-white hover:text-ted-red transition-colors" onClick={scrollToTop}>About</Link>
               </div>
               <div className="flex items-center gap-4">
                 <div className="hidden md:block">
-                  <Link to="/buy" className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff]">
-                    BUY TICKETS
-                  </Link>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0u-Lo0mPZioUITqURZVAg2ys_2FKB3ZWOwY1yqz45PSlElQ/viewform" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff]">
+                  BUY TICKETS
+                </a>
                 </div>
                 <div className="block md:hidden">
                   <MenuButton isOpen={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)} />

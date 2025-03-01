@@ -1,10 +1,11 @@
 const ScheduleSection = () => {
     return (
         <div className="flex flex-col px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 sm:py-12 md:py-16 lg:py-[60px] items-start gap-2 sm:gap-4 bg-[#080808]">
-            <h1 className="text-[#FDFCFD] font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[44px] leading-tight lg:leading-[50px] tracking-[-0.88px]">Schedule</h1>
+            <h1 className="text-[#FDFCFD] font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[44px] leading-tight lg:leading-[50px] tracking-[-0.88px]">
+                Conference Schedule TBD</h1>
 
             {/* ----------------------------- EVENT 1 ----------------------------- */}
-            <div className="flex flex-col justify-end items-start gap-2 w-full">
+            {/* <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
                         <img
@@ -25,11 +26,11 @@ const ScheduleSection = () => {
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
-            </div>
+            </div> */}
 
 
             {/* ----------------------------- SPEAKER ----------------------------- */}
-            <div className="flex flex-col justify-end items-start gap-2 w-full">
+            {/* <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <img
                         src="/schedule/schedule-placeholder-img.png"
@@ -64,11 +65,11 @@ const ScheduleSection = () => {
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
-            </div>
+            </div> */}
 
 
             {/* ----------------------------- EVENT 2 ----------------------------- */}
-            <div className="flex flex-col justify-end items-start gap-2 w-full">
+            {/* <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
                         <img
@@ -89,11 +90,11 @@ const ScheduleSection = () => {
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
-            </div>
+            </div> */}
 
 
             {/* ----------------------------- EVENT 3 ----------------------------- */}
-            <div className="flex flex-col justify-end items-start gap-2 w-full">
+            {/* <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
                         <img
@@ -114,11 +115,11 @@ const ScheduleSection = () => {
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
-            </div>
+            </div> */}
 
 
             {/* ----------------------------- EVENT 4 ----------------------------- */}
-            <div className="flex flex-col justify-end items-start gap-2 w-full">
+            {/* <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
                         <img
@@ -139,11 +140,11 @@ const ScheduleSection = () => {
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
-            </div>
+            </div> */}
 
 
             {/* ----------------------------- EVENT 5 ----------------------------- */}
-            <div className="flex flex-col justify-end items-start gap-2 w-full">
+            {/* <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
                         <img
@@ -164,11 +165,11 @@ const ScheduleSection = () => {
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
-            </div>
+            </div> */}
 
 
             {/* ----------------------------- EVENT 6 ----------------------------- */}
-            <div className="flex flex-col justify-end items-start gap-2 w-full">
+            {/* <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
                         <img
@@ -189,11 +190,11 @@ const ScheduleSection = () => {
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
-            </div>
+            </div> */}
 
 
             {/* ----------------------------- EVENT 7 ----------------------------- */}
-            <div className="flex flex-col justify-end items-start gap-2 w-full">
+            {/* <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
                         <img
@@ -214,7 +215,7 @@ const ScheduleSection = () => {
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
-            </div>
+            </div> */}
         </div>
     )
 };

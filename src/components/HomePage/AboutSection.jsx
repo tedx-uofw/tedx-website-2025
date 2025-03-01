@@ -1,11 +1,9 @@
 const AboutSection = () => {
   return (
-    <section className="flex flex-col md:flex-row px-6 md:px-12 lg:px-[100px] py-16 md:py-20 lg:py-[120px] items-center lg:items-end gap-8 md:gap-12 lg:gap-[100px] self-stretch bg-[#07023D]">
+    <section className="flex flex-col md:flex-row px-6 md:px-12 lg:px-[100px] py-16 md:py-20 lg:py-[120px] items-center lg:items-center gap-8 md:gap-12 lg:gap-[100px] self-stretch bg-[#0C0133]">
       {/* Video Container */}
       <div className="w-full md:w-[400px] lg:w-[480px] aspect-square">
-        <video className="w-full h-full object-cover rounded-lg" autoPlay loop muted playsInline>
-          <source src="/about/nervous-dots3.mp4" type="video/mp4" />
-        </video>
+      <img src="/about/nervousdots5.gif" className="w-full h-full object-cover rounded-lg" alt="Animated dots" />
       </div>
       
       {/* Text Container */}

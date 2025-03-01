@@ -101,16 +101,16 @@ export default function TeamSection() {
     const selectedTeamData = teamData.find(team => team.section === selectedTeam);
 
     return (
-        <div className="flex flex-col items-start w-full mt-[100px] p-[0px_100px_200px] xl:p-[0px_200px_200px] gap-[72px] bg-[#080808]">
+        <div className="flex flex-col items-start w-full mt-[100px] p-[0px_20px_200px] md:p-[0px_40px_200px] lg:p-[0px_100px_200px] xl:p-[0px_200px_200px] gap-[72px] bg-[#080808]">
             <div className="flex flex-row justify-between items-center w-full h-[50px]">
-                <h1 className="min-w-[352px] h-[50px] font-[700] text-[44px] leading-[50px] tracking-[-0.02em] text-[#FDFCFD] font-favorit">
+                <h1 className="md:min-w-[352px] font-[500] md:font-[700] text-[28px] md:text-[44px] leading-[34px] md:leading-[50px] tracking-[-0.02em] text-[#FDFCFD] font-favorit">
                     {selectedTeam}
                 </h1>
 
                 <div className="flex flex-col relative">
                     <button
-                        className={`box-border flex flex-row items-center justify-between px-5 py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[24px] font-[400] transition-all duration-300 ease-in-out ${
-                            isOpen ? "w-[290px]" : "w-[133px]"
+                        className={`box-border flex flex-row items-center justify-between px-5 py-2 md:py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[24px] font-[400] transition-all duration-300 ease-in-out ${
+                            isOpen ? "w-[160px] md:w-[290px]" : "w-[133px]"
                         }`}
                         onClick={() => setIsOpen((prev) => !prev)}
                     >
@@ -135,13 +135,13 @@ export default function TeamSection() {
                     {isOpen && (
                         <div
                             ref={dropdownRef}
-                            className="absolute left-0 top-full mt-2 w-[290px] bg-[#343434] rounded-[16px] p-4 shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 scale-100"
+                            className="absolute left-0 top-full mt-2 w-[160px] md:w-[290px] bg-[#343434] rounded-[16px] p-4 shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 scale-100"
                         >
-                            <ul className="space-y-2 px-3 py-4">
+                            <ul className="space-y-2 px-0 md:px-3 py-4">
                                 {teamData.map((team, index) => (
                                     <li
                                         key={index}
-                                        className="text-[#FDFCFD] text-[16px] flex flex-row gap-3 cursor-pointer hover:text-[#EDEDED]"
+                                        className="text-[#FDFCFD] text-[12px] md:text-[16px] flex flex-row gap-2 md:gap-3 cursor-pointer hover:text-[#EDEDED]"
                                         onClick={() => {
                                             setSelectedTeam(team.section);
                                             setIsOpen(false);
