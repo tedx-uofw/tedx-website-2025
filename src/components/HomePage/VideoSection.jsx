@@ -103,7 +103,7 @@ const VideoSection = () => {
           {!hasInteracted && (
             <div className="absolute inset-0 z-10">
               <img 
-                src="/about/video-poster.jpg" 
+                src="/about/video-poster2.png" 
                 alt="Video thumbnail" 
                 className="w-full h-full object-cover"
               />
