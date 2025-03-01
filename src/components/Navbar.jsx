@@ -88,6 +88,7 @@ const MenuOverlay = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
   
   const handleNavigation = (path) => {
+    scrollToTop();
     onClose();
     navigate(path);
   };
@@ -109,8 +110,9 @@ const MenuOverlay = ({ isOpen, onClose }) => {
               {[
                 { num: '01', text: 'Home', path: '/' },
                 { num: '02', text: 'Speakers', path: '/speakers' },
-                { num: '03', text: 'About', path: '/about' },
-                { num: '04', text: 'Team', path: '/team' },
+                { num: '03', text: 'Team', path: '/team' },
+                { num: '04', text: 'Sponsors', path: '/sponsors' },
+                { num: '05', text: 'About', path: '/about' },
               ].map((item) => (
                 <div 
                   key={item.num}
