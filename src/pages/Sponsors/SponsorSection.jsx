@@ -26,7 +26,7 @@ export default function SponsorSection() {
   return (
 <div className="flex flex-col items-center px-4 sm:px-6 md:px-12 lg:px-[200px] py-[100px] gap-[48px] w-full min-h-screen bg-[#080808]">
   
-  <div className="py-[50px]">
+  <div className="py-[0px]">
     <SponsorHeader header={'INNOVATOR'}/> 
     <div className="flex flex-col gap-y-[40px] mt-[72px]"> 
       {dummy.map((speaker, index) => (
@@ -34,7 +34,7 @@ export default function SponsorSection() {
       ))}
     </div>
   </div>
-
+  <div className="py-[px]"></div>
   <div className="py-[50px]">
     <SponsorHeader header={'EDUCATOR'}/> 
     <div className="flex flex-col gap-y-[40px] mt-[72px]"> 

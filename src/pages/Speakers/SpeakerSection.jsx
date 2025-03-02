@@ -67,7 +67,7 @@ export default function SpeakerSection() {
     {/* Background Image with Reduced Opacity */}
     <div className="absolute inset-0 bg-[url('/speakers/leavesdot_2.png')] 
                     bg-contain bg-no-repeat bg-center 
-                    opacity-30 pointer-events-none"></div>
+                    opacity-20 pointer-events-none"></div>
     
     {/* Content Stays Fully Visible */}
     <SpeakerHeader header={'SPEAKERS'} />
