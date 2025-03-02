@@ -9,12 +9,15 @@ export default function TeamCard({ image, name, major, role }) {
                     <div className="flex items-center text-[24px] lg:text-[28px] leading-[24px] lg:leading-[34px] font-normal tracking-[-0.01em] text-[#FDFCFD]">{name}</div>
                     <div className="text-[12px] lg:text-[16px] leading-[16px] lg:leading-[20px] font-normal tracking-[-0.01em] text-[#B1A8B3] font-favorit-mono">{major}</div>
                 </div>
-                <div className="box-border flex flex-row justify-center items-center px-[12px] py-[6px] lg:px-3 lg:py-1.5 border border-[#5E5469] rounded-[20px] flex-none order-1 flex-grow-0 text-[#FDFCFD] tracking-wider">
-                    <div className="font-[400] text-[12px] lg:text-[16px] leading-[16px] lg:leading-[20px] tracking-[-0.01em] text-[#FDFCFD] font-favorit-mono flex-none order-0 flex-grow-0">
-                        {role}
+                {role && (
+                    <div className="box-border flex flex-row justify-center items-center px-[12px] py-[6px] lg:px-3 lg:py-1.5 border border-[#5E5469] rounded-[20px] flex-none order-1 flex-grow-0 text-[#FDFCFD] tracking-wider">
+                        <div className="font-[400] text-[12px] lg:text-[16px] leading-[16px] lg:leading-[20px] tracking-[-0.01em] text-[#FDFCFD] font-favorit-mono w-full text-center">
+                            {role}
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
         </div>
     )
 }
+
