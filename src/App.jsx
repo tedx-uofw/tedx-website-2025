@@ -81,7 +81,7 @@ function App() {
   const resourcesLoaded = useResourcesLoaded();
   
   useEffect(() => {
-
+    lenis.start();
     function raf(time) {
       lenis.raf(time)
       requestAnimationFrame(raf)
@@ -90,7 +90,7 @@ function App() {
     requestAnimationFrame(raf)
 
     return () => {
-      lenis.destroy()
+      lenis.stop()
     }
   }, [])
 

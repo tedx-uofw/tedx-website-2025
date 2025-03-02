@@ -62,7 +62,7 @@ const speakers = [
 export default function SpeakerSection() {
   return (
   <div className="relative flex flex-col items-start px-4 sm:px-6 md:px-[100px] lg:px-[200px] 
-                  py-[100px] gap-[100px] w-full min-h-screen bg-[#080808]">
+                  py-[100px] gap-[72px] w-full min-h-screen bg-[#080808]">
     
     {/* Background Image with Reduced Opacity */}
     <div className="absolute inset-0 bg-[url('/speakers/leavesdot_2.png')] 

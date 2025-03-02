@@ -120,7 +120,7 @@ const MenuOverlay = ({ isOpen, onClose }) => {
                   className="cursor-pointer group"
                 >
                   <div className="text-sm text-gray-500">{item.num}</div>
-                  <div className="text-4xl font-bold text-white group-hover:text-ted-red transition-colors">
+                  <div className="text-2xl font-bold text-white group-hover:text-ted-red transition-colors">
                     {item.text}
                   </div>
                   <div className="border-b border-white/20 mt-2" />

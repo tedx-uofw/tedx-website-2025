@@ -4,7 +4,7 @@ import SponsorCard from "../Speakers/SpeakerCard"
 
 const dummy = [
     {
-      name: "Aramis O. Hamer",
+      name: "Sponsor 1",
       title: "Tagline: Gear for Good",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor massa vel enim consectetur, et lobortis dui ultricies. Donec vel risus faucibus, facilisis nunc sed, finibus neque. Donec ut est vel urna fermentum viverra. Sed eget arcu id odio vulputate faucibus. Sed consectetur, nunc vel consectetur pretium, nunc ligula condimentum ipsum, vel pharetra ex ex vel neque. Vestibulum vel dolor et nunc hendrerit finibus. Duis ultricies neque vel neque facilisis, vitae ullamcorper lectus sagittis. Nam vel sapien id neque semper pellentesque. Sed vel nulla vel turpis bibendum luctus.",
       image: "/speakers/model.jpeg",
@@ -12,7 +12,7 @@ const dummy = [
       email: 'aramis@example.com'
     },
     {
-      name: "Aramis O. Hamer",
+      name: "Sponsor 2",
       title: "Tagline: Gear for Good",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor massa vel enim consectetur, et lobortis dui ultricies. Donec vel risus faucibus, facilisis nunc sed, finibus neque. Donec ut est vel urna fermentum viverra. Sed eget arcu id odio vulputate faucibus. Sed consectetur, nunc vel consectetur pretium, nunc ligula condimentum ipsum, vel pharetra ex ex vel neque. Vestibulum vel dolor et nunc hendrerit finibus. Duis ultricies neque vel neque facilisis, vitae ullamcorper lectus sagittis. Nam vel sapien id neque semper pellentesque. Sed vel nulla vel turpis bibendum luctus.",
       image: "/speakers/model.jpeg",
@@ -28,7 +28,7 @@ export default function SponsorSection() {
   
   <div className="py-[50px]">
     <SponsorHeader header={'INNOVATOR'}/> 
-    <div className="flex flex-col gap-y-[40px] mt-[75px]"> 
+    <div className="flex flex-col gap-y-[40px] mt-[72px]"> 
       {dummy.map((speaker, index) => (
         <SponsorCard key={index} speaker={speaker} />
       ))}
@@ -37,7 +37,7 @@ export default function SponsorSection() {
 
   <div className="py-[50px]">
     <SponsorHeader header={'EDUCATOR'}/> 
-    <div className="flex flex-col gap-y-[40px] mt-[75px]"> 
+    <div className="flex flex-col gap-y-[40px] mt-[72px]"> 
       {dummy.map((speaker, index) => (
         <SponsorCard key={index} speaker={speaker} />
       ))}
@@ -46,7 +46,7 @@ export default function SponsorSection() {
 
   <div className="py-[50px]">
     <SponsorHeader header={'THINKER'}/> 
-    <div className="flex flex-col gap-y-[40px] mt-[75px]"> 
+    <div className="flex flex-col gap-y-[40px] mt-[72px]"> 
       {dummy.map((speaker, index) => (
         <SponsorCard key={index} speaker={speaker} />
       ))}
@@ -55,7 +55,7 @@ export default function SponsorSection() {
 
   <div className="py-[50px]">
     <SponsorHeader header={'RAFFLE'}/> 
-    <div className="flex flex-col gap-y-[40px] mt-[75px]"> 
+    <div className="flex flex-col gap-y-[40px] mt-[72px]"> 
       {dummy.map((speaker, index) => (
         <SponsorCard key={index} speaker={speaker} />
       ))}
