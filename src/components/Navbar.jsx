@@ -244,10 +244,10 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="hidden md:flex items-center justify-center space-x-8">
-                <Link to="/speakers" className="text-white hover:text-ted-red transition-colors" onClick={scrollToTop}>Speakers</Link>
-                <Link to="/team" className="text-white hover:text-ted-red transition-colors" onClick={scrollToTop}>Team</Link>
-                <Link to="/sponsors" className="text-white hover:text-ted-red transition-colors" onClick={scrollToTop}>Sponsors</Link>
-                <Link to="/about" className="text-white hover:text-ted-red transition-colors" onClick={scrollToTop}>About</Link>
+                <Link to="/speakers" className="text-white hover:text-[#CBC4CC] transition-colors" onClick={scrollToTop}>Speakers</Link>
+                <Link to="/team" className="text-white hover:text-[#CBC4CC] transition-colors" onClick={scrollToTop}>Team</Link>
+                <Link to="/sponsors" className="text-white hover:text-[#CBC4CC] transition-colors" onClick={scrollToTop}>Sponsors</Link>
+                <Link to="/about" className="text-white hover:text-[#CBC4CC] transition-colors" onClick={scrollToTop}>About</Link>
               </div>
               <div className="flex items-center gap-4">
                 <div className="hidden md:block">
