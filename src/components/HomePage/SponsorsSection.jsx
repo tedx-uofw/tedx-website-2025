@@ -19,54 +19,47 @@ const SponsorsSection = () => {
           />
         </div>
         {/* Medium Sponsors */}
-        {/* <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-[60px] sm:gap-[100px]">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-[60px] sm:gap-[100px]">
           <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <img
-              src="/sponsors/asuw.png"
-              alt="ASUW"
+              src="/sponsors/umac.png"
+              alt="UMAC"
               className="w-[150px] sm:w-[165px] md:w-[180px] h-auto object-contain"
             />
           </div>
           <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <img
-              src="/sponsors/asuw.png"
-              alt="ASUW"
+              src="/sponsors/gpss.jpg"
+              alt="GPSS"
               className="w-[150px] sm:w-[165px] md:w-[180px] h-auto object-contain"
             />
           </div>
-        </div> */}
+        </div>
 
         {/* Small Sponsors */}
-        {/* <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[60px] sm:gap-[100px]">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[60px] sm:gap-[100px]">
           <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <img
-              src="/sponsors/asuw.png"
-              alt="ASUW"
+              src="/sponsors/s-bouldering.png"
+              alt="SBP"
               className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
             />
           </div>
           <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <img
-              src="/sponsors/asuw.png"
-              alt="ASUW"
+              src="/sponsors/toasted.bmp"
+              alt="TOASTED."
               className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
             />
           </div>
-          <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          {/* <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <img
               src="/sponsors/asuw.png"
               alt="ASUW"
               className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
             />
-          </div>
-          <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
-            <img
-              src="/sponsors/asuw.png"
-              alt="ASUW"
-              className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
-            />
-          </div>
-        </div> */}
+          </div> */}
+        </div>
       </div>
     </div>
   );
