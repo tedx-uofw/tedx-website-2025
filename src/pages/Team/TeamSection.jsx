@@ -23,9 +23,9 @@ export default function TeamSection() {
         { 
             section: "CO-PRESIDENTS", 
             members: [
+                { name: "Madelyn Lee", major: "Informatics", role: "Co-President", image: "/team/Team Pics/MadelynLee-compressed -tiny.webp" },
                 { name: "Leah Mathew", major: "", role: "Co-President", image: "/team/Team Pics/LeahMathew-compressed -tiny.webp" },
                 { name: "Aryan Sharma", major: "Computer Science", role: "Co-President", image: "/team/Team Pics/AryanSharma-compressed -tiny.webp" },
-                { name: "Madelyn Lee", major: "Informatics", role: "Co-President", image: "/team/Team Pics/MadelynLee-compressed -tiny.webp" }
             ]
         },
         { 
