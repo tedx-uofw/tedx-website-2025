@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /scripts/
+Disallow: /build/process/
+Allow: /
+
+# Sitemap
+Sitemap: https://tedxuofw.com/sitemap.xml

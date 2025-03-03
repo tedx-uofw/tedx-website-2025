@@ -4,10 +4,142 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEDxUofW</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>TEDxUofW | Resonance 2025</title>
+    <meta name="title" content="TEDxUofW | Resonance 2025" />
+    <meta name="description" content="TEDxUofW is an independently organized TED event at the University of Washington featuring inspiring speakers and innovative ideas worth spreading." />
+    <meta name="keywords" content="TED, TEDx, University of Washington, UofW, speakers, ideas, conference, event, resonance, Seattle" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tedxuofw.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tedxuofw.com/" />
+    <meta property="og:title" content="TEDxUofW | Resonance 2025" />
+    <meta property="og:description" content="Join us for TEDxUofW featuring inspiring speakers and innovative ideas at the University of Washington." />
+    <meta property="og:image" content="https://tedxuofw.com/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tedxuofw.com/" />
+    <meta property="twitter:title" content="TEDxUofW | Resonance 2025" />
+    <meta property="twitter:description" content="Join us for TEDxUofW featuring inspiring speakers and innovative ideas at the University of Washington." />
+    <meta property="twitter:image" content="https://tedxuofw.com/og-image.jpg" />
+    
+    <!-- Schema.org structured data for Event -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "TEDxUofW 2025: Resonance",
+      "description": "TEDxUofW is an independently organized TED event at the University of Washington.",
+      "startDate": "2025-04-01T09:00:00-07:00",
+      "endDate": "2025-04-01T17:00:00-07:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "University of Washington",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Seattle",
+          "addressRegion": "WA",
+          "postalCode": "98195",
+          "addressCountry": "US"
+        }
+      },
+      "image": "https://tedxuofw.com/event-image.jpg",
+      "organizer": {
+        "@type": "Organization",
+        "name": "TEDxUofW",
+        "url": "https://tedxuofw.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://tedxuofw.com/buy",
+        "price": "15",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2025-01-01T00:00:00-07:00"
+      },
+      "performer": {
+        "@type": "PerformingGroup",
+        "name": "TEDxUofW Speakers"
+      }
+    }
+    </script>
+    
+    <!-- Schema.org structured data for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TEDxUofW",
+      "url": "https://tedxuofw.com",
+      "logo": "https://tedxuofw.com/logos/Logo.png",
+      "sameAs": [
+        "https://www.facebook.com/TEDxUofW",
+        "https://www.instagram.com/tedxuofw/",
+        "https://www.tiktok.com/@tedxuofw",
+        "https://www.linkedin.com/company/tedxatuofw/"
+      ]
+    }
+    </script>
+    <!-- Prerender-friendly content for SEO -->
+    <style>
+      .prerender-content {
+        display: none;
+      }
+      .preload-spinner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #080808;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+    </style>
   </head>
   <body>
+    <!-- Prerender-friendly content for SEO crawlers -->
+    <div class="prerender-content">
+      <h1>TEDxUofW | Resonance 2025</h1>
+      <section>
+        <h2>About TEDxUofW</h2>
+        <p>TEDxUofW is an independently organized TED event at the University of Washington featuring inspiring speakers and innovative ideas worth spreading.</p>
+      </section>
+      <section>
+        <h2>Team</h2>
+        <p>Meet the dedicated team behind TEDxUofW who work tirelessly to bring inspiring ideas and speakers to the University of Washington.</p>
+      </section>
+      <section>
+        <h2>Speakers</h2>
+        <p>Our carefully selected speakers bring diverse perspectives and innovative ideas to the TEDxUofW stage.</p>
+      </section>
+      <section>
+        <h2>Sponsors</h2>
+        <p>TEDxUofW is made possible by the generous support of our sponsors who share our vision for spreading ideas worth sharing.</p>
+      </section>
+    </div>
+    
+    <!-- Application root -->
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+    
+    <!-- Script to hide prerender content after JS loads -->
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        // After app is loaded, hide the prerender content
+        setTimeout(function() {
+          var prerender = document.querySelector('.prerender-content');
+          if (prerender) prerender.style.display = 'none';
+        }, 100);
+      });
+    </script>
   </body>
 </html> 
