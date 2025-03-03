@@ -23,77 +23,77 @@ export default function TeamSection() {
         { 
             section: "CO-PRESIDENTS", 
             members: [
-                { name: "Madelyn Lee", major: "Informatics", role: "Co-President", image: "/team/Team Pics/MadelynLee-compressed -tiny.webp" },
-                { name: "Leah Mathew", major: "", role: "Co-President", image: "/team/Team Pics/LeahMathew-compressed -tiny.webp" },
+                { name: "Madelyn Lee", role: "Co-President", image: "/team/Team Pics/MadelynLee-compressed -tiny.webp" },
+                { name: "Leah Mathew", role: "Co-President", image: "/team/Team Pics/LeahMathew-compressed -tiny.webp" },
                 { name: "Aryan Sharma", major: "Computer Science", role: "Co-President", image: "/team/Team Pics/AryanSharma-compressed -tiny.webp" },
             ]
         },
         { 
             section: "DESIGN", 
             members: [
-                { name: "Emily Hao", major: "Design & Informatics", role: "Design Director", image: "/team/Team Pics/EmilyHao-compressed -tiny.webp" },
-                { name: "Stephanie Chou", major: "Interaction Design", image: "/team/Team Pics/StephanieChou-compressed -tiny.webp" },
-                { name: "Chris Sanders", major: "HCDE", image: "/team/Team Pics/ChrisSanders-compressed -tiny.webp" },
-                { name: "Addison Mercado", major: "Informatics", image: "/team/Team Pics/AddisonMercado-compressed -tiny.webp" },
-                { name: "Michelle Nguyen", major: "HCDE", image: "/team/Team Pics/MichelleNguyen-compressed -tiny.webp" }
+                { name: "Emily Hao", role: "Design Director", image: "/team/Team Pics/EmilyHao-compressed -tiny.webp" },
+                { name: "Stephanie Chou", image: "/team/Team Pics/StephanieChou-compressed -tiny.webp" },
+                { name: "Chris Sanders", image: "/team/Team Pics/ChrisSanders-compressed -tiny.webp" },
+                { name: "Addison Mercado", image: "/team/Team Pics/AddisonMercado-compressed -tiny.webp" },
+                { name: "Michelle Nguyen", image: "/team/Team Pics/MichelleNguyen-compressed -tiny.webp" }
             ]
         },
         { 
             section: "WEB DEVELOPMENT", 
             members: [
-                { name: "Nathan Daeila", major: "Informatics", role: "Web Development Co-Director", image: "/team/Team Pics/NathanDaeila-compressed -tiny.webp" },
-                { name: "Mehul Chaudhari", major: "Computer Science", role: "Web Development Co-Director", image: "/team/Team Pics/MehulChaudhari-compressed -tiny.webp" },
-                { name: "Ryan Cho", major: "Computer Science", image: "/team/Team Pics/RyanCho-compressed -tiny.webp" },
-                { name: "Sai Sunku", major: "Computer Science", image: "/team/Team Pics/SaiSunku-compressed -tiny.webp" },
-                { name: "Timothy Hoang", major: "Computer Science", image: "/team/Team Pics/TimothyHoang-compressed -tiny.webp" },
-                { name: "Thanh Trinh", major: "Computer Science", image: "/team/Team Pics/ThanhTrinh-compressed -tiny.webp" },
+                { name: "Nathan Daeila", role: "Web Development Co-Director", image: "/team/Team Pics/NathanDaeila-compressed -tiny.webp" },
+                { name: "Mehul Chaudhari", role: "Web Development Co-Director", image: "/team/Team Pics/MehulChaudhari-compressed -tiny.webp" },
+                { name: "Ryan Cho", image: "/team/Team Pics/RyanCho-compressed -tiny.webp" },
+                { name: "Sai Sunku", image: "/team/Team Pics/SaiSunku-compressed -tiny.webp" },
+                { name: "Timothy Hoang", image: "/team/Team Pics/TimothyHoang-compressed -tiny.webp" },
+                { name: "Thanh Trinh", image: "/team/Team Pics/ThanhTrinh-compressed -tiny.webp" },
             ]
         },
         { 
             section: "FINANCE", 
             members: [
-                { name: "Lillian Tran", major: "Accounting", role: "Finance Director", image: "/team/Team Pics/LillianTran-compressed -tiny.webp" },
-                { name: "Kayla Pham", major: "Marketing", image: "/team/Team Pics/KaylaPham-compressed -tiny.webp" },
-                { name: "Ryann Phillips", major: "Business Administration", image: "/team/Team Pics/RyannPhillips-compressed -tiny.webp" },
-                { name: "Reva Kulkarni", major: "Business Administration", image: "/team/Team Pics/RevaKulkarni-compressed -tiny.webp" }
+                { name: "Lillian Tran", role: "Finance Director", image: "/team/Team Pics/LillianTran-compressed -tiny.webp" },
+                { name: "Kayla Pham", image: "/team/Team Pics/KaylaPham-compressed -tiny.webp" },
+                { name: "Ryann Phillips", image: "/team/Team Pics/RyannPhillips-compressed -tiny.webp" },
+                { name: "Reva Kulkarni", image: "/team/Team Pics/RevaKulkarni-compressed -tiny.webp" }
             ]
         },
         { 
             section: "LOGISTICS", 
             members: [
-                { name: "Simran Kaur", major: "Informatics", role: "Logistics Co-Director", image: "/team/Team Pics/SimranKaur-compressed -tiny.webp" },
-                { name: "Ryan Vu", major: "Computer Science & Informatics", role: "Logistics Co-Director", image: "/team/Team Pics/RyanVu-compressed -tiny.webp" },
-                { name: "Hailey Yuan", major: "", image: "/team/Team Pics/HaileyYuan-compressed -tiny.webp" },
-                { name: "Grace Townsend", major: "Finance & Marketing", image: "/team/Team Pics/GraceTownsend-compressed -tiny.webp" },
-                { name: "Kayla Vo", major: "Business", image: "/team/Team Pics/KaylaVo-compressed -tiny.webp" },
-                { name: "Mia McDunnah", major: "Informatics", image: "/team/Team Pics/MiaMcDunnah-compressed -tiny.webp" },
-                { name: "Shubham Garg", major: "Business Administration", image: "/team/Team Pics/ShubhamGarg-compressed -tiny.webp" }
+                { name: "Simran Kaur", role: "Logistics Co-Director", image: "/team/Team Pics/SimranKaur-compressed -tiny.webp" },
+                { name: "Ryan Vu", role: "Logistics Co-Director", image: "/team/Team Pics/RyanVu-compressed -tiny.webp" },
+                { name: "Hailey Yuan", image: "/team/Team Pics/HaileyYuan-compressed -tiny.webp" },
+                { name: "Grace Townsend", image: "/team/Team Pics/GraceTownsend-compressed -tiny.webp" },
+                { name: "Kayla Vo", image: "/team/Team Pics/KaylaVo-compressed -tiny.webp" },
+                { name: "Mia McDunnah", image: "/team/Team Pics/MiaMcDunnah-compressed -tiny.webp" },
+                { name: "Shubham Garg", image: "/team/Team Pics/ShubhamGarg-compressed -tiny.webp" }
             ]
         },
         { 
             section: "MARKETING", 
             members: [
-                { name: "Anya Pan", major: "Business Administration", role: "Marketing Co-Director", image: "/team/Team Pics/AnyaPan-compressed -tiny.webp" },
-                { name: "Karen Ensastegui Salazar", major: "Marketing", role: "Marketing Co-Director", image: "/team/Team Pics/KarenSalazar-compressed -tiny.webp" },
-                { name: "Tara Kapur", major: "Marketing & Psychology", image: "/team/Team Pics/TaraKapur-compressed -tiny.webp" },
-                { name: "Vatsala Choudhary", major: "Business Administration", image: "/team/Team Pics/VatsalaChoudhary-compressed -tiny.webp" },
-                { name: "Ally Phan", major: "Marketing", image: "/team/Team Pics/AllyPhan-compressed -tiny.webp" },
-                { name: "Gloria Ramirez- Hernandez", major: "Business Administration", image: "/team/Team Pics/GloriaHernandez-compressed -tiny.webp" },
-                { name: "Kitkat Villavicencio", major: "Informatics & Psychology", image: "/team/Team Pics/KitkatVillavicencio-compressed -tiny.webp" },
-                { name: "Isabella Truong", major: "Business Administration", image: "/team/Team Pics/IsabellaTruong-compressed -tiny.webp" }
+                { name: "Anya Pan", role: "Marketing Co-Director", image: "/team/Team Pics/AnyaPan-compressed -tiny.webp" },
+                { name: "Karen Ensastegui Salazar", role: "Marketing Co-Director", image: "/team/Team Pics/KarenSalazar-compressed -tiny.webp" },
+                { name: "Tara Kapur", image: "/team/Team Pics/TaraKapur-compressed -tiny.webp" },
+                { name: "Vatsala Choudhary", image: "/team/Team Pics/VatsalaChoudhary-compressed -tiny.webp" },
+                { name: "Ally Phan", image: "/team/Team Pics/AllyPhan-compressed -tiny.webp" },
+                { name: "Gloria Ramirez- Hernandez", image: "/team/Team Pics/GloriaHernandez-compressed -tiny.webp" },
+                { name: "Kitkat Villavicencio", image: "/team/Team Pics/KitkatVillavicencio-compressed -tiny.webp" },
+                { name: "Isabella Truong", image: "/team/Team Pics/IsabellaTruong-compressed -tiny.webp" }
             ]
         },
         { 
             section: "SPEAKER SELECTION", 
             members: [
-                { name: "Tanishka Anandkumar", major: "Engineering", role: "Speaker Selection Co-Director", image: "/team/Team Pics/TanishkaAnandkumar-compressed -tiny.webp" },
-                { name: "Diya Patel", major: "", role: "Speaker Selection Co-Director", image: "/team/Team Pics/DiyaPatel-compressed -tiny.webp" },
-                { name: "Hirsh Garhwal", major: "", image: "/team/Team Pics/HirshGarhwal-compressed -tiny.webp" },
-                { name: "Radhika Kamran", major: "", image: "/team/Team Pics/RadhikaKamran-compressed -tiny.webp" },
-                { name: "Annissa Tan", major: "", image: "/team/Team Pics/AnnissaTan-compressed -tiny.webp" },
-                { name: "Sidhant Rauniyar", major: "Physiology", image: "/team/Team Pics/SidhantRauniyar-compressed -tiny.webp" },
-                { name: "Tatiana Miranda", major: "Hispanic Studies", image: "/team/Team Pics/TatianaMiranda-compressed -tiny.webp" },
-                { name: "Srimedha Thummala", major: "Computer Science", image: "/team/Team Pics/SrimedhaThummala-compressed -tiny.webp" }
+                { name: "Tanishka Anandkumar", role: "Speaker Selection Co-Director", image: "/team/Team Pics/TanishkaAnandkumar-compressed -tiny.webp" },
+                { name: "Diya Patel", role: "Speaker Selection Co-Director", image: "/team/Team Pics/DiyaPatel-compressed -tiny.webp" },
+                { name: "Hirsh Garhwal", image: "/team/Team Pics/HirshGarhwal-compressed -tiny.webp" },
+                { name: "Radhika Kamran", image: "/team/Team Pics/RadhikaKamran-compressed -tiny.webp" },
+                { name: "Annissa Tan", image: "/team/Team Pics/AnnissaTan-compressed -tiny.webp" },
+                { name: "Sidhant Rauniyar", image: "/team/Team Pics/SidhantRauniyar-compressed -tiny.webp" },
+                { name: "Tatiana Miranda", image: "/team/Team Pics/TatianaMiranda-compressed -tiny.webp" },
+                { name: "Srimedha Thummala", image: "/team/Team Pics/SrimedhaThummala-compressed -tiny.webp" }
             ]
         }
     ];
