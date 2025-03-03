@@ -2,36 +2,31 @@ import React from 'react'
 
 export default function SpeakerHero() {
   return (
-    <div className="relative min-h-[100svh] -mt-[72px] md:-mt-[72px] lg:-mt-[88px] xl:-mt-[138px]">
-      <div className="flex flex-row items-end pt-[88px] px-[200px] pb-[100px] gap-[40px]
-        w-full min-h-screen left-0 top-0 bg-[#0C0133]
-        "
-        style={{
-          backgroundImage: "url('/speakers/leavedot.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundBlendMode: 'multiply',
-          zIndex: -1,
-        }}
-          
-        >
-          <div className="flex flex-col items-start p-0 gap-[20px] w-[1520px] h-[332px] mix-blend-normal">
-            <div className="flex flex-row items-center p-0 gap-[15px] w-[300px] h-[24px]">
-              <span> ⚪️ </span>
-              <p className="w-[119px] h-[24px] font-[ABC Favorit Mono Variable Edu] font-normal text-[20px]
-              leading-[24px] tracking-[-0.01em] text-[#FFFFFF] order-0
-              ">
-                THE LINEUP
-              </p>
+    <div 
+      className="h-[100svh] w-full"
+      style={{ 
+        backgroundImage: "url('/speakers/Leaf_pic.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="h-full w-full flex items-end">
+        <div className="flex flex-col items-start p-6 sm:p-6 md:p-12 lg:p-[100px] pb-[max(40px,calc(env(safe-area-inset-bottom)+24px))] sm:pb-[40px] gap-[20px] md:gap-[40px] w-full max-w-[1920px]">
+          <div className="flex flex-row items-center gap-[15px]">
+            <div className="w-[8px] h-[8px] sm:w-[11px] sm:h-[11px] bg-white rounded-[60px]"></div>
+            <div className="text-white text-sm sm:text-lg md:text-xl lg:text-[20px] leading-tight sm:leading-snug md:leading-[24px] tracking-[-0.01em] font-normal whitespace-nowrap font-favorit-mono">
+              THE LINEUP
             </div>
-            <div className="w-[1090px] h-[200px] font-[ABC Favorit Variable Edu] font-normal not-italic text-[44px] leading-[50px] tracking-[-0.02em] text-[#FFFFFF] order-1">
-              Seven speakers from around the Seattle community will join us at TEDxUofW Resonance 2025 to share how they’re inspiring, thinking, what they’re sharing with the community, and what’s next.
+          </div>
+          <div className="max-w-[90%] md:max-w-[1220px]">
+            <div className="text-white font-favorit text-xl sm:text-3xl md:text-[36px] lg:text-[44px] font-medium leading-tight sm:leading-snug md:leading-[44px] lg:leading-[50px] tracking-[-0.02em]">
+              Six speakers from the Seattle community will join us to share their sources of inspiration, what they're thinking, and plans for the future. 
             </div>
-
-            <div className="w-[1090px] h-[68px] font-[ABC Favorit Variable Edu] font-normal not-italic text-[28px] leading-[34px] tracking-[-0.01em] text-[#FFFFFF] order-2">
-              Attendees will leave feeling more connected to a community of builders and to the future of community leaders inspiring change.
+            <div className="text-[#B1A8B3] font-favorit text-base sm:text-xl md:text-2xl lg:text-[28px] font-normal leading-snug sm:leading-[28px] md:leading-[32px] lg:leading-[34px] mt-4 sm:mt-6 md:mt-8">
+              Attendees will leave feeling more connected to a community of builders and to the future of community leaders inspiring change. 
             </div>
+          </div>
         </div>
       </div>
     </div>

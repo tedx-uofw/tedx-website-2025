@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Image from './Image'
+import { lenis } from '../App';
 
 const MenuButton = ({ isOpen, onClick }) => (
   <button
@@ -87,6 +88,7 @@ const MenuOverlay = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
   
   const handleNavigation = (path) => {
+    scrollToTop();
     onClose();
     navigate(path);
   };
@@ -108,8 +110,9 @@ const MenuOverlay = ({ isOpen, onClose }) => {
               {[
                 { num: '01', text: 'Home', path: '/' },
                 { num: '02', text: 'Speakers', path: '/speakers' },
-                { num: '03', text: 'About', path: '/about' },
-                { num: '04', text: 'Team', path: '/team' },
+                { num: '03', text: 'Team', path: '/team' },
+                { num: '04', text: 'Sponsors', path: '/sponsors' },
+                { num: '05', text: 'About', path: '/about' },
               ].map((item) => (
                 <div 
                   key={item.num}
@@ -117,7 +120,7 @@ const MenuOverlay = ({ isOpen, onClose }) => {
                   className="cursor-pointer group"
                 >
                   <div className="text-sm text-gray-500">{item.num}</div>
-                  <div className="text-4xl font-bold text-white group-hover:text-ted-red transition-colors">
+                  <div className="text-2xl font-bold text-white group-hover:text-ted-red transition-colors">
                     {item.text}
                   </div>
                   <div className="border-b border-white/20 mt-2" />
@@ -172,6 +175,13 @@ const MenuOverlay = ({ isOpen, onClose }) => {
     </div>
   );
 };
+
+function scrollToTop() {
+  lenis.scrollTo(0, 0, {
+    duration: 1, // Optional: Set a duration for the scroll animation (in seconds)
+    easing: (t) => t, // Optional: Define an easing function for smooth scrolling
+  });
+}
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
@@ -228,21 +238,25 @@ const Navbar = () => {
                       layout="constrained"
                       priority="true"
                       background="transparent"
+                      onClick={scrollToTop}
                     />
                   </div>
                 </Link>
               </div>
               <div className="hidden md:flex items-center justify-center space-x-8">
-                <Link to="/speakers" className="text-white hover:text-ted-red transition-colors">Speakers</Link>
-                <Link to="/team" className="text-white hover:text-ted-red transition-colors">Team</Link>
-                <Link to="/sponsors" className="text-white hover:text-ted-red transition-colors">Sponsors</Link>
-                <Link to="/about" className="text-white hover:text-ted-red transition-colors">About</Link>
+                <Link to="/speakers" className="text-white hover:text-[#CBC4CC] transition-colors" onClick={scrollToTop}>Speakers</Link>
+                <Link to="/team" className="text-white hover:text-[#CBC4CC] transition-colors" onClick={scrollToTop}>Team</Link>
+                <Link to="/sponsors" className="text-white hover:text-[#CBC4CC] transition-colors" onClick={scrollToTop}>Sponsors</Link>
+                <Link to="/about" className="text-white hover:text-[#CBC4CC] transition-colors" onClick={scrollToTop}>About</Link>
               </div>
               <div className="flex items-center gap-4">
                 <div className="hidden md:block">
-                  <Link to="/buy" className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff]">
-                    BUY TICKETS
-                  </Link>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0u-Lo0mPZioUITqURZVAg2ys_2FKB3ZWOwY1yqz45PSlElQ/viewform" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-[#E4E0E4] text-black px-4 py-2 rounded text-lg transition-colors hover:bg-[#ffffff]">
+                  BUY TICKETS
+                </a>
                 </div>
                 <div className="block md:hidden">
                   <MenuButton isOpen={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)} />
