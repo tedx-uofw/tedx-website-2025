@@ -23,7 +23,7 @@ import SponsorCard from "../Speakers/SpeakerCard"
     {
       name: "(GPSS) Graduate and Professional Student Senate",
       description: "The Graduate and Professional Student Senate (GPSS) represents over 17,000 graduate and professional students at the University of Washington. Our Senators represent academic departments as well as non-academic programs and communities. GPSS hosts events and programming, provides opportunities for a wide breadth of engagement through internal committees and university-wide liaison positions, and offers funding for academic and professional development. ",
-      image: "/sponsors/gpss.jpg",
+      image: "/sponsors/gpss-new.png",
     },
   ]
 

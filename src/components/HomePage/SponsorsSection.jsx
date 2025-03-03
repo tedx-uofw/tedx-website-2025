@@ -29,7 +29,7 @@ const SponsorsSection = () => {
           </div>
           <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <img
-              src="/sponsors/gpss.jpg"
+              src="/sponsors/gpss-new.png"
               alt="GPSS"
               className="w-[150px] sm:w-[165px] md:w-[180px] h-auto object-contain"
             />
