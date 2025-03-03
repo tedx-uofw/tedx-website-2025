@@ -43,10 +43,10 @@ export default function TeamSection() {
             members: [
                 { name: "Nathan Daeila", role: "Web Development Co-Director", image: "/team/Team Pics/NathanDaeila-compressed -tiny.webp" },
                 { name: "Mehul Chaudhari", role: "Web Development Co-Director", image: "/team/Team Pics/MehulChaudhari-compressed -tiny.webp" },
-                { name: "Ryan Cho", image: "/team/Team Pics/RyanCho-compressed -tiny.webp" },
-                { name: "Sai Sunku", image: "/team/Team Pics/SaiSunku-compressed -tiny.webp" },
                 { name: "Timothy Hoang", image: "/team/Team Pics/TimothyHoang-compressed -tiny.webp" },
                 { name: "Thanh Trinh", image: "/team/Team Pics/ThanhTrinh-compressed -tiny.webp" },
+                { name: "Ryan Cho", image: "/team/Team Pics/RyanCho-compressed -tiny.webp" },
+                { name: "Sai Sunku", image: "/team/Team Pics/SaiSunku-compressed -tiny.webp" },
             ]
         },
         { 
