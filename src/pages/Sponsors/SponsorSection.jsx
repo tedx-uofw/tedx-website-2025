@@ -5,7 +5,7 @@ import SponsorCard from "../Speakers/SpeakerCard"
   const innovator = [
     {
       name: "(ASUW) Associated Students of the University of Washington",
-      description: "The Associated Students of the University of Washington is the democratic voice of students that engages the campus community through programming, services and advocacy. The ASUW is dedicated to fostering a safe and inclusive environment. The ASUW strives to enrich student life and develop future leaders.",
+      description: "The University of Washington is committed to providing access, equal opportunity and reasonable accommodation in its services, programs, activities, education and employment for individuals with disabilities. To request disability accommodation contact the Disability Services Office at least ten days in advance at: 206.543.6450/V, 206.543.6452/TTY, 206.685.7264 (FAX), or e-mail at dso@u.washington.edu.",
       image: "/sponsors/asuw.png",
     },
   ]
@@ -17,12 +17,12 @@ import SponsorCard from "../Speakers/SpeakerCard"
   const thinker = [
     {
       name: "(UMAC) University Marketing & Communications",
-      description: "University Marketing & Communications (UMAC) is the University of Washington’s central branding, marketing and communications office. Based within University Advancement, UMAC brings together talented staff from across a range of marketing and communications disciplines to carry out integrated efforts in support of the UW’s highest priorities.",
+      description: "University Marketing & Communications (UMAC) is the University of Washington’s central branding, marketing and communications office. Based within University Advancement, UMAC brings together talented staff from across a range of marketing and communications disciplines in support of the UW’s highest priorities. At the center of our work is the Boundless brand, reflecting the optimistic spirit and extensive positive impact of the University on our students’ lives and on communities near and far.",
       image: "/sponsors/umac.png",
     },
     {
       name: "(GPSS) Graduate and Professional Student Senate",
-      description: "The Graduate and Professional Student Senate (GPSS) represents over 17,000 graduate and professional students at the University of Washington. Our Senators represent academic departments as well as non-academic programs and communities. GPSS hosts events and programming, provides opportunities for a wide breadth of engagement through internal committees and university-wide liaison positions, and offers funding for academic and professional development. ",
+      description: "The Graduate and Professional Student Senate (GPSS) represents over 15,000 graduate and professional students at the University of Washington. Our Senators represent academic departments as well as non-academic programs and communities. GPSS hosts events and programming, provides opportunities for engagement through internal committees and university-wide liaison positions, and offers funding for academic and professional development.",
       image: "/sponsors/gpss-new.png",
     },
   ]
@@ -35,7 +35,7 @@ import SponsorCard from "../Speakers/SpeakerCard"
     },
     {
       name: "TOASTED.",
-      description: "Seattle's premier halal bagel cafe and coffee shop serving fresh, handcrafted bagels, artisanal coffee, and pastries in the University District.",
+      description: "Started by two UW Undergrads & crafted from Mediterranean inspiration, TOASTED. Bagels & Coffee offers a unique take on the classic bagel experience.",
       image: "/sponsors/toasted.bmp",
     },
   ]
