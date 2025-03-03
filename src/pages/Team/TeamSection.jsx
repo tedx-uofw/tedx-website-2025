@@ -3,7 +3,7 @@ import IndividualTeams from "./IndividualTeams";
 
 export default function TeamSection() {
 
-    const [ selectedTeam, setSelectedTeam ] = useState("CO-PRESIDENTS");
+    const [ selectedTeam, setSelectedTeam ] = useState(null);
     const [ isOpen, setIsOpen ] = useState(false);
     const dropdownRef = useRef(null);
 
@@ -98,23 +98,23 @@ export default function TeamSection() {
         }
     ];
 
-    const selectedTeamData = teamData.find(team => team.section === selectedTeam);
+    const selectedTeamData = selectedTeam ? teamData.find(team => team.section === selectedTeam) : null;
 
     return (
         <div className="flex flex-col items-start w-full mt-[100px] p-[0px_20px_200px] md:p-[0px_40px_200px] lg:p-[0px_100px_200px] xl:p-[0px_200px_200px] gap-[72px] bg-[#080808]">
             <div className="flex flex-row justify-between items-center w-full h-[50px]">
                 <h1 className="md:min-w-[352px] font-[500] md:font-[700] text-[28px] md:text-[44px] leading-[34px] md:leading-[50px] tracking-[-0.02em] text-[#FDFCFD] font-favorit">
-                    {selectedTeam}
+                    {selectedTeam || "Teams"}
                 </h1>
 
                 <div className="flex flex-col relative">
                     <button
-                        className={`box-border flex flex-row items-center justify-between px-5 py-2 md:py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[24px] font-[400] transition-all duration-300 ease-in-out ${
+                        className={`box-border flex flex-row items-center justify-between px-5 py-2 md:py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[16px] md:text-[24px] font-[400] transition-all duration-300 ease-in-out overflow-ellipsis ${
                             isOpen ? "w-[160px] md:w-[290px]" : "w-[133px]"
                         }`}
                         onClick={() => setIsOpen((prev) => !prev)}
                     >
-                        <span>Teams</span>
+                        <span>{selectedTeam || "Teams"}</span>
                         <svg
                             className="w-4 h-4"
                             viewBox="0 0 24 24"
@@ -138,10 +138,20 @@ export default function TeamSection() {
                             className="absolute left-0 top-full mt-2 w-[160px] md:w-[290px] bg-[#343434] rounded-[16px] p-4 shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 scale-100"
                         >
                             <ul className="space-y-2 px-0 md:px-3 py-4">
+                                <li
+                                    className={`text-[#FDFCFD] text-[12px] md:text-[16px] flex flex-row gap-2 md:gap-3 cursor-pointer hover:text-[#EDEDED] ${!selectedTeam ? 'font-bold' : ''}`}
+                                    onClick={() => {
+                                        setSelectedTeam(null);
+                                        setIsOpen(false);
+                                    }}
+                                >
+                                    <div>00</div>
+                                    <div>ALL TEAMS</div>
+                                </li>
                                 {teamData.map((team, index) => (
                                     <li
                                         key={index}
-                                        className="text-[#FDFCFD] text-[12px] md:text-[16px] flex flex-row gap-2 md:gap-3 cursor-pointer hover:text-[#EDEDED]"
+                                        className={`text-[#FDFCFD] text-[12px] md:text-[16px] flex flex-row gap-2 md:gap-3 cursor-pointer hover:text-[#EDEDED] ${selectedTeam === team.section ? 'font-bold' : ''}`}
                                         onClick={() => {
                                             setSelectedTeam(team.section);
                                             setIsOpen(false);
@@ -156,8 +166,16 @@ export default function TeamSection() {
                     )}
                 </div>
             </div>
-            {selectedTeamData && (
+            
+            {selectedTeamData ? (
                 <IndividualTeams team={selectedTeamData.section} members={selectedTeamData.members} />
+            ) : (
+                teamData.map((team, index) => (
+                    <div key={index} className="w-full">
+                        <h2 className="text-[#FDFCFD] text-[24px] md:text-[32px] font-[500] mb-8">{team.section}</h2>
+                        <IndividualTeams team={team.section} members={team.members} />
+                    </div>
+                ))
             )}
         </div>
     );
