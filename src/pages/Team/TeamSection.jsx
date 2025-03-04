@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import IndividualTeams from "./IndividualTeams";
+import { Helmet } from "react-helmet";
 
 export default function TeamSection() {
-
-    const [ selectedTeam, setSelectedTeam ] = useState("CO-PRESIDENTS");
+    const [ selectedTeam, setSelectedTeam ] = useState(null);
     const [ isOpen, setIsOpen ] = useState(false);
     const dropdownRef = useRef(null);
 
@@ -43,10 +43,10 @@ export default function TeamSection() {
             members: [
                 { name: "Nathan Daeila", role: "Web Development Co-Director", image: "/team/Team Pics/NathanDaeila-compressed -tiny.webp" },
                 { name: "Mehul Chaudhari", role: "Web Development Co-Director", image: "/team/Team Pics/MehulChaudhari-compressed -tiny.webp" },
-                { name: "Ryan Cho", image: "/team/Team Pics/RyanCho-compressed -tiny.webp" },
-                { name: "Sai Sunku", image: "/team/Team Pics/SaiSunku-compressed -tiny.webp" },
                 { name: "Timothy Hoang", image: "/team/Team Pics/TimothyHoang-compressed -tiny.webp" },
                 { name: "Thanh Trinh", image: "/team/Team Pics/ThanhTrinh-compressed -tiny.webp" },
+                { name: "Ryan Cho", image: "/team/Team Pics/RyanCho-compressed -tiny.webp" },
+                { name: "Sai Sunku", image: "/team/Team Pics/SaiSunku-compressed -tiny.webp" },
             ]
         },
         { 
@@ -98,67 +98,134 @@ export default function TeamSection() {
         }
     ];
 
-    const selectedTeamData = teamData.find(team => team.section === selectedTeam);
+    const selectedTeamData = selectedTeam ? teamData.find(team => team.section === selectedTeam) : null;
+    const pageTitle = selectedTeam 
+        ? `${selectedTeam} Team - TEDx UofW | University of Washington TEDx` 
+        : "Our Team - TEDx UofW | University of Washington TEDx 2025";
+    const pageDescription = selectedTeam 
+        ? `Meet the ${selectedTeam} team members at TEDx UofW (University of Washington TEDx) who help organize the TEDx 2025 event.` 
+        : "Meet the dedicated team behind TEDx UofW (University of Washington TEDx) who organize TEDx 2025, bringing ideas worth spreading to UW Seattle.";
 
     return (
-        <div className="flex flex-col items-start w-full mt-[100px] p-[0px_20px_200px] md:p-[0px_40px_200px] lg:p-[0px_100px_200px] xl:p-[0px_200px_200px] gap-[72px] bg-[#080808]">
-            <div className="flex flex-row justify-between items-center w-full h-[50px]">
-                <h1 className="md:min-w-[352px] font-[500] md:font-[700] text-[28px] md:text-[44px] leading-[34px] md:leading-[50px] tracking-[-0.02em] text-[#FDFCFD] font-favorit">
-                    {selectedTeam}
-                </h1>
+        <>
+            <Helmet>
+                <title>{pageTitle}</title>
+                <meta name="description" content={pageDescription} />
+                <meta property="og:title" content={pageTitle} />
+                <meta property="og:description" content={pageDescription} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://resonance.tedxatuofw.com/team" />
+                <meta name="twitter:title" content={pageTitle} />
+                <meta name="twitter:description" content={pageDescription} />
+                <meta name="keywords" content="TEDx UofW team, University of Washington TEDx organizers, TEDx 2025 committee, UW TEDx team, TEDx Seattle organizers, TEDx University of Washington staff, TEDx organization, TEDx volunteers" />
+            </Helmet>
+            
+            <section 
+                className="flex flex-col items-start w-full mt-[100px] p-[0px_20px_200px] md:p-[0px_40px_200px] lg:p-[0px_100px_200px] xl:p-[0px_200px_200px] gap-[72px] bg-[#080808]"
+                itemScope 
+                itemType="https://schema.org/Organization"
+            >
+                <meta itemProp="name" content="TEDx UofW" />
+                <meta itemProp="alternateName" content="University of Washington TEDx" />
+                <meta itemProp="alternateName" content="TEDx University of Washington" />
+                <meta itemProp="alternateName" content="UW TEDx" />
+                <meta itemProp="description" content="TEDx UofW brings together bright minds to give idea-focused talks on the University of Washington campus for TEDx 2025: Resonance." />
+                <meta itemProp="url" content="https://resonance.tedxatuofw.com" />
+                
+                <header className="flex flex-row justify-between items-center w-full h-[50px]">
+                    <h1 className="md:min-w-[352px] font-[500] md:font-[700] text-[28px] md:text-[44px] leading-[34px] md:leading-[50px] tracking-[-0.02em] text-[#FDFCFD] font-favorit">
+                        {selectedTeam || "Teams at TEDx University of Washington"}
+                    </h1>
 
-                <div className="flex flex-col relative">
-                    <button
-                        className={`box-border flex flex-row items-center justify-between px-5 py-2 md:py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[24px] font-[400] transition-all duration-300 ease-in-out ${
-                            isOpen ? "w-[160px] md:w-[290px]" : "w-[133px]"
-                        }`}
-                        onClick={() => setIsOpen((prev) => !prev)}
-                    >
-                        <span>Teams</span>
-                        <svg
-                            className="w-4 h-4"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            style={{ minWidth: "16px", minHeight: "16px" }}
+                    <div className="flex flex-col relative">
+                        <button
+                            className={`box-border flex flex-row items-center justify-between px-5 py-2 md:py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[16px] md:text-[24px] font-[400] transition-all duration-300 ease-in-out overflow-ellipsis ${
+                                isOpen ? "w-[160px] md:w-[290px]" : "w-[133px]"
+                            }`}
+                            onClick={() => setIsOpen((prev) => !prev)}
+                            aria-haspopup="true"
+                            aria-expanded={isOpen}
+                            aria-controls="team-dropdown"
                         >
-                            <path
-                                d="M2 7L12 17L22 7"
-                                stroke="white"
-                                strokeWidth="3"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
-                    </button>
+                            <span>{selectedTeam || "Teams"}</span>
+                            <svg
+                                className="w-4 h-4"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style={{ minWidth: "16px", minHeight: "16px" }}
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M2 7L12 17L22 7"
+                                    stroke="white"
+                                    strokeWidth="3"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </button>
 
-                    {isOpen && (
-                        <div
-                            ref={dropdownRef}
-                            className="absolute left-0 top-full mt-2 w-[160px] md:w-[290px] bg-[#343434] rounded-[16px] p-4 shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 scale-100"
-                        >
-                            <ul className="space-y-2 px-0 md:px-3 py-4">
-                                {teamData.map((team, index) => (
+                        {isOpen && (
+                            <nav
+                                id="team-dropdown"
+                                ref={dropdownRef}
+                                className="absolute left-0 top-full mt-2 w-[160px] md:w-[290px] bg-[#343434] rounded-[16px] p-4 shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 scale-100"
+                                aria-label="Team selection"
+                            >
+                                <ul className="space-y-2 px-0 md:px-3 py-4" role="menu">
                                     <li
-                                        key={index}
-                                        className="text-[#FDFCFD] text-[12px] md:text-[16px] flex flex-row gap-2 md:gap-3 cursor-pointer hover:text-[#EDEDED]"
+                                        className={`text-[#FDFCFD] text-[12px] md:text-[16px] flex flex-row gap-2 md:gap-3 cursor-pointer hover:text-[#EDEDED] ${!selectedTeam ? 'font-bold' : ''}`}
                                         onClick={() => {
-                                            setSelectedTeam(team.section);
+                                            setSelectedTeam(null);
                                             setIsOpen(false);
                                         }}
+                                        role="menuitem"
                                     >
-                                        <div>{`0${index + 1}`}</div>
-                                        <div>{team.section}</div>
+                                        <div>00</div>
+                                        <div>ALL TEAMS</div>
                                     </li>
-                                ))}
-                            </ul>
-                        </div>
+                                    {teamData.map((team, index) => (
+                                        <li
+                                            key={index}
+                                            className={`text-[#FDFCFD] text-[12px] md:text-[16px] flex flex-row gap-2 md:gap-3 cursor-pointer hover:text-[#EDEDED] ${selectedTeam === team.section ? 'font-bold' : ''}`}
+                                            onClick={() => {
+                                                setSelectedTeam(team.section);
+                                                setIsOpen(false);
+                                            }}
+                                            role="menuitem"
+                                        >
+                                            <div>{`0${index + 1}`}</div>
+                                            <div>{team.section}</div>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </nav>
+                        )}
+                    </div>
+                </header>
+                
+                <div className="team-content w-full">
+                    {selectedTeamData ? (
+                        <section aria-labelledby={`team-section-${selectedTeamData.section}`} itemScope itemType="https://schema.org/OrganizationRole">
+                            <meta itemProp="roleName" content={selectedTeamData.section} />
+                            <meta itemProp="parentOrganization" content="TEDx UofW" />
+                            <h2 id={`team-section-${selectedTeamData.section}`} className="sr-only">{selectedTeamData.section} Team at University of Washington TEDx</h2>
+                            <IndividualTeams team={selectedTeamData.section} members={selectedTeamData.members} />
+                        </section>
+                    ) : (
+                        teamData.map((team, index) => (
+                            <section key={index} className="w-full mb-12" aria-labelledby={`team-section-${team.section}`} itemProp="department" itemScope itemType="https://schema.org/OrganizationRole">
+                                <meta itemProp="roleName" content={team.section} />
+                                <meta itemProp="parentOrganization" content="TEDx UofW" />
+                                <meta itemProp="description" content={`${team.section} team at University of Washington TEDx 2025 event.`} />
+                                <h2 id={`team-section-${team.section}`} className="text-[#FDFCFD] text-[24px] md:text-[32px] font-[500] mb-8">{team.section}</h2>
+                                <IndividualTeams team={team.section} members={team.members} />
+                            </section>
+                        ))
                     )}
                 </div>
-            </div>
-            {selectedTeamData && (
-                <IndividualTeams team={selectedTeamData.section} members={selectedTeamData.members} />
-            )}
-        </div>
+            </section>
+        </>
     );
 }
