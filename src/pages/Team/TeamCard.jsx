@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function TeamCard({ image, name, major, role }) {
-    // Create a descriptive alt text for the image
-    const altText = `${name}${role ? `, ${role}` : ''}${major ? ` - ${major}` : ''} at TEDxUofW`;
+    // Create a descriptive alt text for the image that includes key search terms
+    const altText = `${name}${role ? `, ${role}` : ''}${major ? ` - ${major}` : ''} at TEDx UofW (University of Washington TEDx) 2025 event`;
     
     return (
         <article className="flex flex-row items-start content-start p-0 gap-[16px] md:gap-[20px] lg:gap-[40px] w-1/2 flex-none order-0 self-stretch flex-grow-0" itemScope itemType="https://schema.org/Person">
@@ -27,8 +27,12 @@ export default function TeamCard({ image, name, major, role }) {
                         </p>
                     </div>
                 )}
-                <meta itemProp="affiliation" content="TEDxUofW" />
-                <meta itemProp="worksFor" content="TEDxUofW" />
+                <meta itemProp="affiliation" content="TEDx UofW" />
+                <meta itemProp="memberOf" content="University of Washington TEDx" />
+                <meta itemProp="worksFor" content="TEDx UofW" />
+                <meta itemProp="event" content="TEDx 2025: Resonance" />
+                <meta itemProp="description" content={`${name} is ${role ? `a ${role}` : 'a team member'} at TEDx University of Washington 2025 event.`} />
+                <meta itemProp="url" content={`https://resonance.tedxatuofw.com/team`} />
             </div>
         </article>
     )

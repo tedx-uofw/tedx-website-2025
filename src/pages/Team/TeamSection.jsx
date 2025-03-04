@@ -99,10 +99,12 @@ export default function TeamSection() {
     ];
 
     const selectedTeamData = selectedTeam ? teamData.find(team => team.section === selectedTeam) : null;
-    const pageTitle = selectedTeam ? `${selectedTeam} Team - TEDxUofW` : "Our Team - TEDxUofW";
+    const pageTitle = selectedTeam 
+        ? `${selectedTeam} Team - TEDx UofW | University of Washington TEDx` 
+        : "Our Team - TEDx UofW | University of Washington TEDx 2025";
     const pageDescription = selectedTeam 
-        ? `Meet the ${selectedTeam} team members at TEDxUofW.` 
-        : "Meet the dedicated team behind TEDxUofW, working together to bring ideas worth spreading to the University of Washington.";
+        ? `Meet the ${selectedTeam} team members at TEDx UofW (University of Washington TEDx) who help organize the TEDx 2025 event.` 
+        : "Meet the dedicated team behind TEDx UofW (University of Washington TEDx) who organize TEDx 2025, bringing ideas worth spreading to UW Seattle.";
 
     return (
         <>
@@ -112,9 +114,10 @@ export default function TeamSection() {
                 <meta property="og:title" content={pageTitle} />
                 <meta property="og:description" content={pageDescription} />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://tedxuofw.com/team" />
+                <meta property="og:url" content="https://resonance.tedxatuofw.com/team" />
                 <meta name="twitter:title" content={pageTitle} />
                 <meta name="twitter:description" content={pageDescription} />
+                <meta name="keywords" content="TEDx UofW team, University of Washington TEDx organizers, TEDx 2025 committee, UW TEDx team, TEDx Seattle organizers, TEDx University of Washington staff, TEDx organization, TEDx volunteers" />
             </Helmet>
             
             <section 
@@ -122,13 +125,16 @@ export default function TeamSection() {
                 itemScope 
                 itemType="https://schema.org/Organization"
             >
-                <meta itemProp="name" content="TEDxUofW" />
-                <meta itemProp="description" content="TEDxUofW brings together bright minds to give idea-focused talks on the University of Washington campus." />
-                <meta itemProp="url" content="https://tedxuofw.com" />
+                <meta itemProp="name" content="TEDx UofW" />
+                <meta itemProp="alternateName" content="University of Washington TEDx" />
+                <meta itemProp="alternateName" content="TEDx University of Washington" />
+                <meta itemProp="alternateName" content="UW TEDx" />
+                <meta itemProp="description" content="TEDx UofW brings together bright minds to give idea-focused talks on the University of Washington campus for TEDx 2025: Resonance." />
+                <meta itemProp="url" content="https://resonance.tedxatuofw.com" />
                 
                 <header className="flex flex-row justify-between items-center w-full h-[50px]">
                     <h1 className="md:min-w-[352px] font-[500] md:font-[700] text-[28px] md:text-[44px] leading-[34px] md:leading-[50px] tracking-[-0.02em] text-[#FDFCFD] font-favorit">
-                        {selectedTeam || "Teams"}
+                        {selectedTeam || "Teams at TEDx University of Washington"}
                     </h1>
 
                     <div className="flex flex-col relative">
@@ -201,13 +207,18 @@ export default function TeamSection() {
                 
                 <div className="team-content w-full">
                     {selectedTeamData ? (
-                        <section aria-labelledby={`team-section-${selectedTeamData.section}`}>
-                            <h2 id={`team-section-${selectedTeamData.section}`} className="sr-only">{selectedTeamData.section}</h2>
+                        <section aria-labelledby={`team-section-${selectedTeamData.section}`} itemScope itemType="https://schema.org/OrganizationRole">
+                            <meta itemProp="roleName" content={selectedTeamData.section} />
+                            <meta itemProp="parentOrganization" content="TEDx UofW" />
+                            <h2 id={`team-section-${selectedTeamData.section}`} className="sr-only">{selectedTeamData.section} Team at University of Washington TEDx</h2>
                             <IndividualTeams team={selectedTeamData.section} members={selectedTeamData.members} />
                         </section>
                     ) : (
                         teamData.map((team, index) => (
-                            <section key={index} className="w-full mb-12" aria-labelledby={`team-section-${team.section}`} itemProp="department">
+                            <section key={index} className="w-full mb-12" aria-labelledby={`team-section-${team.section}`} itemProp="department" itemScope itemType="https://schema.org/OrganizationRole">
+                                <meta itemProp="roleName" content={team.section} />
+                                <meta itemProp="parentOrganization" content="TEDx UofW" />
+                                <meta itemProp="description" content={`${team.section} team at University of Washington TEDx 2025 event.`} />
                                 <h2 id={`team-section-${team.section}`} className="text-[#FDFCFD] text-[24px] md:text-[32px] font-[500] mb-8">{team.section}</h2>
                                 <IndividualTeams team={team.section} members={team.members} />
                             </section>
