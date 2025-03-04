@@ -35,7 +35,10 @@ export default function TeamSection() {
                 { name: "Stephanie Chou", image: "/team/Team Pics/StephanieChou-compressed -tiny.webp" },
                 { name: "Chris Sanders", image: "/team/Team Pics/ChrisSanders-compressed -tiny.webp" },
                 { name: "Addison Mercado", image: "/team/Team Pics/AddisonMercado-compressed -tiny.webp" },
-                { name: "Michelle Nguyen", image: "/team/Team Pics/MichelleNguyen-compressed -tiny.webp" }
+                { name: "Michelle Nguyen", image: "/team/Team Pics/MichelleNguyen-compressed -tiny.webp" },
+                { name: "Cleo Williams", image: "/team/Team Pics/CleoWilliams-compressed -tiny.webp" },
+                { name: "Ronan Pitzel", image: "/team/Team Pics/RonanPitzel-compressed -tiny.webp" }
+
             ]
         },
         { 
