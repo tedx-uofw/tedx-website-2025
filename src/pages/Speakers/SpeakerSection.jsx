@@ -61,7 +61,7 @@ const speakers = [
 
 export default function SpeakerSection() {
   return (
-  <div className="relative flex flex-col items-start px-4 sm:px-6 md:px-[100px] lg:px-[200px] 
+  <div className="relative flex flex-col items-start px-4 sm:px-6 md:px-[50px] lg:px-[100px] 
                   py-[100px] gap-[72px] w-full min-h-screen bg-[#080808]">
     
     {/* Background Image with Reduced Opacity */}

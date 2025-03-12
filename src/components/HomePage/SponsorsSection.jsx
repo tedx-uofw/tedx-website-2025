@@ -40,6 +40,27 @@ const SponsorsSection = () => {
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[60px] sm:gap-[100px]">
           <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <img
+              src="/sponsors/UW-Alumni.jpg"
+              alt="UW Alumni Association"
+              className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
+            />
+          </div>
+          <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+            <img
+              src="/sponsors/UW-Hub.png"
+              alt="HUB RSO Event Fund"
+              className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
+            />
+          </div>
+          <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+            <img
+              src="/sponsors/UWICA1.svg"
+              alt="UW ICA"
+              className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
+            />
+          </div>
+          <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+            <img
               src="/sponsors/s-bouldering.png"
               alt="SBP"
               className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
@@ -52,13 +73,6 @@ const SponsorsSection = () => {
               className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
             />
           </div>
-          {/* <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
-            <img
-              src="/sponsors/asuw.png"
-              alt="ASUW"
-              className="w-[120px] sm:w-[135px] md:w-[150px] h-auto object-contain"
-            />
-          </div> */}
         </div>
       </div>
     </div>
