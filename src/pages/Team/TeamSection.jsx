@@ -124,33 +124,33 @@ export default function TeamSection() {
             </Helmet>
             
             <section 
-                className="flex flex-col items-start w-full mt-[100px] p-[0px_20px_200px] md:p-[0px_40px_200px] lg:p-[0px_100px_200px] xl:p-[0px_200px_200px] gap-[72px] bg-[#080808]"
+                className="flex flex-col items-start w-full mt-[100px] p-[0px_20px_200px] md:p-[0px_40px_200px] lg:p-[0px_100px_200px] xl:p-[0px_100px_200px] gap-[72px] bg-[#080808]"
                 itemScope 
                 itemType="https://schema.org/Organization"
             >
                 <meta itemProp="name" content="TEDx UofW" />
                 <meta itemProp="alternateName" content="University of Washington TEDx" />
-                <meta itemProp="alternateName" content="TEDx University of Washington" />
+                <meta itemProp="alternateName" content="TEDxUofW" />
                 <meta itemProp="alternateName" content="UW TEDx" />
                 <meta itemProp="description" content="TEDx UofW brings together bright minds to give idea-focused talks on the University of Washington campus for TEDx 2025: Resonance." />
                 <meta itemProp="url" content="https://resonance.tedxatuofw.com" />
                 
                 <header className="flex flex-row justify-between items-center w-full h-[50px]">
                     <h1 className="md:min-w-[352px] font-[500] md:font-[700] text-[28px] md:text-[44px] leading-[34px] md:leading-[50px] tracking-[-0.02em] text-[#FDFCFD] font-favorit">
-                        {selectedTeam || "Teams at TEDx University of Washington"}
+                        {selectedTeam || "Teams at TEDxUofW"}
                     </h1>
 
                     <div className="flex flex-col relative">
                         <button
                             className={`box-border flex flex-row items-center justify-between px-5 py-2 md:py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[16px] md:text-[24px] font-[400] transition-all duration-300 ease-in-out overflow-ellipsis ${
-                                isOpen ? "w-[160px] md:w-[290px]" : "w-[133px]"
+                                isOpen ? "w-[160px] md:w-[290px]" : "w-[240px]"
                             }`}
                             onClick={() => setIsOpen((prev) => !prev)}
                             aria-haspopup="true"
                             aria-expanded={isOpen}
                             aria-controls="team-dropdown"
                         >
-                            <span>{selectedTeam || "Teams"}</span>
+                            <span>{selectedTeam || "ALL TEAMS"}</span>
                             <svg
                                 className="w-4 h-4"
                                 viewBox="0 0 24 24"
