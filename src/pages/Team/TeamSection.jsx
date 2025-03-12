@@ -46,7 +46,7 @@ export default function TeamSection() {
             members: [
                 { name: "Nathan Daeila", role: "Web Development Co-Director", image: "/team/Team Pics/NathanDaeila-compressed -tiny.webp" },
                 { name: "Mehul Chaudhari", role: "Web Development Co-Director", image: "/team/Team Pics/MehulChaudhari-compressed -tiny.webp" },
-                { name: "Timothy Hoang", image: "/team/Team Pics/TimothyHoang-compressed -tiny.webp" },
+                { name: "Timothy Hoang", image: "/team/Team Pics/TimothyHoang-compressed -tiny2.webp" },
                 { name: "Thanh Trinh", image: "/team/Team Pics/ThanhTrinh-compressed -tiny.webp" },
                 { name: "Ryan Cho", image: "/team/Team Pics/RyanCho-compressed -tiny.webp" },
                 { name: "Sai Sunku", image: "/team/Team Pics/SaiSunku-compressed -tiny.webp" },
@@ -142,15 +142,13 @@ export default function TeamSection() {
 
                     <div className="flex flex-col relative">
                         <button
-                            className={`box-border flex flex-row items-center justify-between px-5 py-2 md:py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[16px] md:text-[24px] font-[400] transition-all duration-300 ease-in-out overflow-ellipsis ${
-                                isOpen ? "w-[160px] md:w-[290px]" : "w-[240px]"
-                            }`}
-                            onClick={() => setIsOpen((prev) => !prev)}
+                        className="box-border flex flex-row items-center justify-between px-5 py-2 md:py-3 gap-2 bg-[#403851] rounded-[60px] text-white text-[16px] md:text-[24px] font-[400] transition-all duration-300 ease-in-out overflow-hidden min-w-max"
+                        onClick={() => setIsOpen((prev) => !prev)}
                             aria-haspopup="true"
                             aria-expanded={isOpen}
                             aria-controls="team-dropdown"
                         >
-                            <span>{selectedTeam || "ALL TEAMS"}</span>
+                            <span className="truncate block max-w-[70px] md:max-w-[260px] overflow-hidden">{selectedTeam || "ALL TEAMS"}</span>
                             <svg
                                 className="w-4 h-4"
                                 viewBox="0 0 24 24"
