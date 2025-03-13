@@ -45,7 +45,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                                The Ripple Effect of Mentorship
+                                Amplifying Potential Through Mentorship
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
@@ -81,7 +81,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                                Transforming Dementia Care
+                            Dementia needs a lot more thought.
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
@@ -140,7 +140,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                                Community: The Infrastructure of Innovation
+                                Discovery, Exploration and Inquiry: A Love Story
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
@@ -226,7 +226,7 @@ const ScheduleSection = () => {
                         </p>
 
                         <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                            DDC
+                            Developpe Dance Club
                         </h2>
                     </div>
                 </div>
@@ -249,7 +249,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                                Reimagining Time Through Design
+                                Breaking the Oppressive Nature of Time
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
@@ -284,7 +284,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                                Equity as Innovation's Foundation 
+                                The Transformative Power of Community Innovation 
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
@@ -345,7 +345,7 @@ const ScheduleSection = () => {
                         </p>
 
                         <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                            Furmata
+                            Furmata Acapella
                         </h2>
                     </div>
                 </div>
@@ -368,7 +368,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                                The Power of Personal Impact
+                                Crossing the Chasm of Life’s Changes
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
