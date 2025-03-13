@@ -42,7 +42,7 @@ const speakers = [
   {
   name: "Kris Engskov",
   title: "Co-Founder and CEO, Rippl",
-  talkName: "Dementia needs a lot more thought. ",
+  talkName: "Dementia Needs a Lot More Thought",
   description: "Kris Engskov, former Starbucks executive and founder of Rippl, shares his powerful journey from corporate leadership to tackling the urgent challenges of dementia care. Inspired by his parents' struggles in the long-term care system and his experiences during the COVID-19 crisis in assisted living, Kris sheds light on the staggering prevalence and costs of dementia—affecting 1 in 3 of us over our lifetimes. He highlights the devastating cycle of emergency room visits for dementia patients and the critical need for specialized care. Kris calls for destigmatizing dementia, investing in innovative care models, and building a trained workforce to support aging Baby Boomers. Through Rippl's accessible, virtual, specialized care initiatives, Kris advocates for a national movement to transform dementia care, offering dignity and support to patients and caregivers with urgency and hope.",
   image: "/speakers/kris.jpg",
   linkedin: null,

@@ -81,7 +81,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                            Dementia needs a lot more thought.
+                            Dementia Needs a Lot More Thought
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
@@ -119,6 +119,10 @@ const ScheduleSection = () => {
                         <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
                             Traditional Chinese Dance
                         </h2>
+
+                        <div className="flex px-2 sm:px-5 py-0.5 sm:py-1.5 items-center rounded-[20px] border border-[#B1A8B3] text-xs sm:text-base">
+                            Performance
+                        </div>
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
@@ -228,6 +232,10 @@ const ScheduleSection = () => {
                         <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
                             Developpe Dance Club
                         </h2>
+
+                        <div className="flex px-2 sm:px-5 py-0.5 sm:py-1.5 items-center rounded-[20px] border border-[#B1A8B3] text-xs sm:text-base">
+                            Performance
+                        </div>
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
@@ -347,6 +355,10 @@ const ScheduleSection = () => {
                         <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
                             Furmata Acapella
                         </h2>
+
+                        <div className="flex px-2 sm:px-5 py-0.5 sm:py-1.5 items-center rounded-[20px] border border-[#B1A8B3] text-xs sm:text-base">
+                            Performance
+                        </div>  
                     </div>
                 </div>
                 <div className="w-full h-[2px] border-t-[2px] border-dotted border-[#B1A8B3]"></div>
