@@ -4,7 +4,7 @@ import SponsorCard from "../Speakers/SpeakerCard"
 
   const innovator = [
     {
-      name: "(ASUW) Associated Students of the University of Washington",
+      name: "Associated Students of the University of Washington (ASUW)",
       description: "The University of Washington is committed to providing access, equal opportunity and reasonable accommodation in its services, programs, activities, education and employment for individuals with disabilities. To request disability accommodation contact the Disability Services Office at least ten days in advance at: 206.543.6450/V, 206.543.6452/TTY, 206.685.7264 (FAX), or e-mail at dso@u.washington.edu.",
       image: "/sponsors/asuw.png",
     },
@@ -101,7 +101,7 @@ export default function SponsorSection() {
   </div>
 
   <div className="py-[50px]">
-    <SponsorHeader header={'Raffle'}/> 
+    <SponsorHeader header={'RAFFLE'}/> 
     <div className="flex flex-col gap-y-[40px] mt-[72px]"> 
       {raffle.map((speaker, index) => (
         <SponsorCard key={index} speaker={speaker} />
