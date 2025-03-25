@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useLayoutEffect } from 'react'
-import LazyImage from './common/LazyImage'
-import ResonanceGif from '../resources/img/components/footer/resonance-footer.gif'
 import { 
+  LazyImage,
   InstagramIcon, 
   FacebookIcon, 
   TiktokIcon, 
   LinkedinIcon, 
   EmailIcon 
-} from './common/Icons'
+} from './common'
+import ResonanceGif from '../resources/img/components/footer/resonance-footer.gif'
 
 const Footer = () => {
   const footerRef = useRef(null);

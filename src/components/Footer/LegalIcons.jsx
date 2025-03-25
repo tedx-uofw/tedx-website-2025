@@ -4,7 +4,7 @@ import {
   TiktokIcon, 
   LinkedinIcon, 
   EmailIcon 
-} from '../common/Icons';
+} from '../common';
 
 export default function LegalIcons() {
   return (
