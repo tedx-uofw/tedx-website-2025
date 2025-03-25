@@ -1,3 +1,5 @@
+import LazyImage from '../common/LazyImage';
+
 const ScheduleSection = () => {
     return (
         <div className="flex flex-col px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 sm:py-12 md:py-16 lg:py-[60px] items-start gap-2 sm:gap-4 bg-[#080808]">
@@ -8,10 +10,11 @@ const ScheduleSection = () => {
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
-                        <img
+                        <LazyImage
                             src="/schedule/Ring.svg"
                             alt="Ring"
                             className="w-[20px] sm:w-[24px] h-[20px] sm:h-[24px]"
+                            placeholderColor="#080808"
                         />
                     </div>
 
@@ -32,10 +35,11 @@ const ScheduleSection = () => {
             {/* ----------------------------- SPEAKER 1 ----------------------------- */}
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
-                    <img
+                    <LazyImage
                         src="/speakers/diana.png"
                         alt="Speaker"
-                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] object-cover shrink-0"
+                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] shrink-0"
+                        placeholderColor="#080808"
                     />
 
                     <div className="flex flex-col items-start gap-1 sm:gap-2 min-w-0">
@@ -68,10 +72,11 @@ const ScheduleSection = () => {
             {/* ----------------------------- SPEAKER 2 ----------------------------- */}
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
-                    <img
+                    <LazyImage
                         src="/speakers/kris.jpg"
                         alt="Speaker"
-                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] object-cover shrink-0"
+                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] shrink-0"
+                        placeholderColor="#080808"
                     />
 
                     <div className="flex flex-col items-start gap-1 sm:gap-2 min-w-0">
@@ -104,10 +109,11 @@ const ScheduleSection = () => {
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
-                        <img
+                        <LazyImage
                             src="/schedule/Ring5.svg"
                             alt="Ring"
                             className="w-[28px] sm:w-[40px] h-[28px] sm:h-[40px]"
+                            placeholderColor="#080808"
                         />
                     </div>
 
@@ -131,10 +137,11 @@ const ScheduleSection = () => {
             {/* ----------------------------- SPEAKER 3 ----------------------------- */}
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
-                    <img
+                    <LazyImage
                         src="/speakers/ana.jpg"
                         alt="Speaker"
-                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] object-cover shrink-0"
+                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] shrink-0"
+                        placeholderColor="#080808"
                     />
 
                     <div className="flex flex-col items-start gap-1 sm:gap-2 min-w-0">
@@ -167,10 +174,11 @@ const ScheduleSection = () => {
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
-                        <img
+                        <LazyImage
                             src="/schedule/Ring2.svg"
                             alt="Ring"
                             className="w-[40px] sm:w-[60px] h-[40px] sm:h-[60px]"
+                            placeholderColor="#080808"
                         />
                     </div>
 
@@ -192,10 +200,11 @@ const ScheduleSection = () => {
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
-                        <img
+                        <LazyImage
                             src="/schedule/Ring3.svg"
                             alt="Ring"
                             className="w-[60px] sm:w-[96px] h-[14px] sm:h-[21px]"
+                            placeholderColor="#080808"
                         />
                     </div>
 
@@ -217,10 +226,11 @@ const ScheduleSection = () => {
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
-                        <img
+                        <LazyImage
                             src="/schedule/Ring4.svg"
                             alt="Ring"
                             className="w-[50px] sm:w-[80px] h-[50px] sm:h-[80px]"
+                            placeholderColor="#080808"
                         />
                     </div>
 
@@ -244,10 +254,11 @@ const ScheduleSection = () => {
             {/* ----------------------------- SPEAKER 4 ----------------------------- */}
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
-                    <img
+                    <LazyImage
                         src="/speakers/gesshaa.jpg"
                         alt="Speaker"
-                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] object-cover shrink-0"
+                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] shrink-0"
+                        placeholderColor="#080808"
                     />
 
                     <div className="flex flex-col items-start gap-1 sm:gap-2 min-w-0">
@@ -279,10 +290,11 @@ const ScheduleSection = () => {
             {/* ----------------------------- SPEAKER 5 ----------------------------- */}
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
-                    <img
+                    <LazyImage
                         src="/speakers/doc.jpg"
                         alt="Speaker"
-                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] object-cover shrink-0"
+                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] shrink-0"
+                        placeholderColor="#080808"
                     />
 
                     <div className="flex flex-col items-start gap-1 sm:gap-2 min-w-0">
@@ -315,10 +327,11 @@ const ScheduleSection = () => {
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
-                        <img
+                        <LazyImage
                             src="/schedule/Ring6.svg"
                             alt="Ring"
                             className="w-[50px] sm:w-[80px] h-[50px] sm:h-[80px]"
+                            placeholderColor="#080808"
                         />
                     </div>
 
@@ -340,10 +353,11 @@ const ScheduleSection = () => {
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
-                        <img
+                        <LazyImage
                             src="/schedule/Ring4.svg"
                             alt="Ring"
                             className="w-[60px] sm:w-[100px] h-[60px] sm:h-[100px]"
+                            placeholderColor="#080808"
                         />
                     </div>
 
@@ -367,10 +381,11 @@ const ScheduleSection = () => {
             {/* ----------------------------- SPEAKER 6 ----------------------------- */}
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
-                    <img
+                    <LazyImage
                         src="/speakers/mike.jpg"
                         alt="Speaker"
-                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] object-cover shrink-0"
+                        className="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] shrink-0"
+                        placeholderColor="#080808"
                     />
 
                     <div className="flex flex-col items-start gap-1 sm:gap-2 min-w-0">
@@ -380,7 +395,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                                Crossing the Chasm of Life’s Changes
+                                Crossing the Chasm of Life's Changes
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
@@ -403,10 +418,11 @@ const ScheduleSection = () => {
             <div className="flex flex-col justify-end items-start gap-2 w-full">
                 <div className="flex items-center gap-3 sm:gap-6 w-full py-4 sm:py-8">
                     <div className="flex w-[80px] sm:w-[180px] h-[60px] sm:h-[100px] p-2 sm:p-[36px] justify-center items-center shrink-0">
-                        <img
+                        <LazyImage
                             src="/schedule/Ring4.svg"
                             alt="Ring"
                             className="w-[60px] sm:w-[100px] h-[60px] sm:h-[100px]"
+                            placeholderColor="#080808"
                         />
                     </div>
 

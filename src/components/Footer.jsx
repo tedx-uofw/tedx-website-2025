@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useLayoutEffect } from 'react'
-import Image from './Image'
+import LazyImage from './common/LazyImage'
 import ResonanceGif from '../resources/img/components/footer/resonance-footer.gif'
 
 const Footer = () => {
@@ -49,15 +49,11 @@ const Footer = () => {
             {/* Logo Section */}
             <div className="flex flex-col gap-2">
               <Link to="/" className="block">
-                <Image 
+                <LazyImage 
                   src="/logos/Logo.png"
                   alt="TEDx UofW"
-                  width={240}
-                  height={62}
-                  layout="constrained"
-                  priority={false}
-                  background="transparent"
                   className="max-w-[15rem] md:max-w-[10rem] lg:max-w-[15rem]"
+                  placeholderColor="#0C0133"
                 />
               </Link>
             </div>
@@ -121,7 +117,7 @@ const Footer = () => {
                 </a>
                 <a href="https://www.linkedin.com/company/tedxatuofw/" target="_blank" rel="noopener noreferrer" className="text-white opacity-60 hover:opacity-100 transition-opacity">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447,20.452H16.893V14.883c0-1.328-.027-3.037-1.852-3.037-1.853,0-2.136,1.445-2.136,2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9,1.637-1.85,3.37-1.85c3.601,0,4.267,2.37,4.267,5.455v6.286zM5.337,7.433c-1.144,0-2.063-.926-2.063-2.065c0-1.138.92-2.063,2.063-2.063c1.14,0,2.064.925,2.064,2.063c0,1.139-.925,2.065-2.064,2.065zm1.782,13.019H3.555V9h3.564v11.452zM22.225,0H1.771C.792,0,0,.774,0,1.729v20.542C0,23.227.792,24,1.771,24h20.451C23.2,24,24,23.227,24,22.271V1.729C24,.774,23.2,0,22.222,0h.003z"/>
+                    <path d="M20.447,20.452H16.893V14.883c0-1.328-.027-3.037-1.852-3.037-1.853,0-2.136,1.445-2.136,2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9,1.637-1.85,3.37-1.85,3.601,0,4.267,2.37,4.267,5.455v6.286zM5.337,7.433c-1.144,0-2.063-.926-2.063-2.065c0-1.138.92-2.063,2.063-2.063c1.14,0,2.064.925,2.064,2.063c0,1.139-.925,2.065-2.064,2.065zm1.782,13.019H3.555V9h3.564v11.452zM22.225,0H1.771C.792,0,0,.774,0,1.729v20.542C0,23.227.792,24,1.771,24h20.451C23.2,24,24,23.227,24,22.271V1.729C24,.774,23.2,0,22.222,0h.003z"/>
                   </svg>
                 </a>
               </div>
@@ -129,12 +125,11 @@ const Footer = () => {
           </div>
           {/* Resonance Gif */}
           <div className="mt-8 md:mt-16">
-            <Image 
+            <LazyImage 
               src={ResonanceGif}
               alt="RESONANCE sliding focus gif"
-              layout="fill"
-              background="transparent"
-              className="object-cover animate-expand-vertical w-full"
+              className="object-cover w-full animate-expand-vertical"
+              placeholderColor="#0C0133"
             />
           </div>
         </div>

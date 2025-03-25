@@ -1,3 +1,5 @@
+import LazyImage from '../common/LazyImage';
+
 const VenueAndAccessibilitySection = () => {
   return (
     <div className="flex flex-col gap-8 md:gap-12 lg:gap-[60px] px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 sm:py-12 md:py-16 lg:py-[100px]">
@@ -35,10 +37,11 @@ const VenueAndAccessibilitySection = () => {
 
       {/* Image and Accessibility Section */}
       <div className="flex flex-col gap-6 sm:gap-8 md:gap-[40px]">
-        <img
+        <LazyImage
           src="/about/kane2.jpg"
           alt="Kane Hall"
-          className="w-full h-[250px] sm:h-[300px] md:h-[500px] lg:h-[600px] object-cover rounded-lg"
+          className="w-full h-[250px] sm:h-[300px] md:h-[500px] lg:h-[600px] rounded-lg"
+          placeholderColor="#1a1a1a"
         />
 
         <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-[40px] items-start">
