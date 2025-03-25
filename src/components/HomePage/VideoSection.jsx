@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import LazyImage from '../common/LazyImage';
+import { LazyImage } from '../common';
 
 const VideoSection = () => {
   const [isLoading, setIsLoading] = useState(true);

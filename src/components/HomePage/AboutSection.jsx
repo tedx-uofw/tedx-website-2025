@@ -1,4 +1,4 @@
-import LazyImage from '../common/LazyImage';
+import { LazyImage } from '../common';
 
 const AboutSection = () => {
   return (

@@ -1,10 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
+
+// Get dirname in ESM
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    extensions: ['.js', '.jsx', '.json']
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      '@': resolve(__dirname, 'src')
+    }
   },
   optimizeDeps: {
     esbuildOptions: {
@@ -27,25 +36,15 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-components': [
-            // Add UI dependencies here
-          ],
-          'icons': [
-            '../components/common/Icons'
+          vendor: [
+            'react', 
+            'react-dom', 
+            'react-router-dom'
           ]
-        },
-        chunkSizeWarningLimit: 1000
+        }
       }
     },
-    cssCodeSplit: true,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
-      }
-    }
+    minify: 'terser'
   },
   cacheDir: '.vite-cache'
 }) 

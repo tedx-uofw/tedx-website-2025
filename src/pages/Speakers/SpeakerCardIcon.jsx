@@ -1,4 +1,4 @@
-import { LinkedinIcon, EmailIcon } from "../../components/common/Icons";
+import { LinkedinIcon, EmailIcon } from "../../components/common";
 
 export default function SpeakerCardIcon({linkedin, email}) {
   return (
