@@ -1,9 +1,16 @@
+import LazyImage from '../common/LazyImage';
+
 const AboutSection = () => {
   return (
     <section className="flex flex-col md:flex-row px-6 md:px-12 lg:px-[100px] py-16 md:py-20 lg:py-[120px] items-center lg:items-center gap-8 md:gap-12 lg:gap-[100px] self-stretch bg-[#0C0133]">
       {/* Video Container */}
       <div className="w-full md:w-[400px] lg:w-[480px] aspect-square">
-      <img src="/about/nervousdots5.gif" className="w-full h-full object-cover rounded-lg" alt="Animated dots" />
+        <LazyImage 
+          src="/about/nervousdots5.gif" 
+          className="w-full h-full rounded-lg" 
+          alt="Animated dots" 
+          placeholderColor="#0C0133"
+        />
       </div>
       
       {/* Text Container */}

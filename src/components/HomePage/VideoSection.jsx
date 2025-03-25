@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import LazyImage from '../common/LazyImage';
 
 const VideoSection = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -102,10 +103,11 @@ const VideoSection = () => {
         <>
           {!hasInteracted && (
             <div className="absolute inset-0 z-10">
-              <img 
+              <LazyImage 
                 src="/about/video-poster2.png" 
                 alt="Video thumbnail" 
-                className="w-full h-full object-cover"
+                className="w-full h-full"
+                placeholderColor="#080808"
               />
               <button
                 className="absolute inset-0 flex items-center justify-center bg-black/50"
