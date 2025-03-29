@@ -21,6 +21,14 @@ const SponsorsSection = () => {
             placeholderColor="#0C0133"
           />
         </div>
+        <div className="w-full flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          <LazyImage
+            src="/sponsors/celsius-horizontal.png"
+            alt="Celsius"
+            className="w-[240px] sm:w-[280px] md:w-[320px] h-auto"
+            placeholderColor="#0C0133"
+          />
+        </div>
         {/* Medium Sponsors */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-[60px] sm:gap-[100px]">
           <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">

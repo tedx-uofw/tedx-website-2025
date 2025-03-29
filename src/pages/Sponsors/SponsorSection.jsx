@@ -8,6 +8,11 @@ import SponsorCard from "../Speakers/SpeakerCard"
       description: "The University of Washington is committed to providing access, equal opportunity and reasonable accommodation in its services, programs, activities, education and employment for individuals with disabilities. To request disability accommodation contact the Disability Services Office at least ten days in advance at: 206.543.6450/V, 206.543.6452/TTY, 206.685.7264 (FAX), or e-mail at dso@u.washington.edu.",
       image: "/sponsors/asuw.png",
     },
+    {
+      name: "CELSIUS",
+      description: "We aim to inspire those who want to live fit by giving them a sustained energy source that’s specially formulated to work with your body to help you reach your goals. We support those who work overtime at everything they do and never take shortcuts. We power through the extra set, we push through the last sprint, and we hustle through the workday. CELSIUS stands out against other brands because it’s made with healthier ingredients such as ginger, guarana, green tea and 7 essential vitamins. Our drinks contain no sugar, no aspartame, no high fructose corn syrup, and no artificial colors or flavors. CELSIUS is certified gluten free, kosher, and non-GMO. We’re made with nothing but the best, so you can do your best and take on any challenge that comes your way!",
+      image: "/sponsors/celsius-horizontal.png",
+    },
   ]
 
   const educator = [
@@ -54,7 +59,7 @@ import SponsorCard from "../Speakers/SpeakerCard"
     {
       name: "TOASTED.",
       description: "Started by two UW Undergrads & crafted from Mediterranean inspiration, TOASTED. Bagels & Coffee offers a unique take on the classic bagel experience.",
-      image: "/sponsors/toasted.bmp",
+      image: "/sponsors/toasted.png",
     },
   ]
 
