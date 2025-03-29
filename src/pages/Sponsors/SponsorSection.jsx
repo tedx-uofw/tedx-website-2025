@@ -76,7 +76,7 @@ export default function SponsorSection() {
       ))}
     </div>
   </div>
-  <div className="py-[px]"></div>
+  <div className="py-[25px]"></div>
 
   {/* <div className="py-[50px]">
     <SponsorHeader header={'EDUCATOR'}/> 
