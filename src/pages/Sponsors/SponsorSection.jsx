@@ -30,6 +30,11 @@ import SponsorCard from "../Speakers/SpeakerCard"
       description: "The Graduate and Professional Student Senate (GPSS) represents over 15,000 graduate and professional students at the University of Washington. Our Senators represent academic departments as well as non-academic programs and communities. GPSS hosts events and programming, provides opportunities for engagement through internal committees and university-wide liaison positions, and offers funding for academic and professional development.",
       image: "/sponsors/gpss-new.png",
     },
+    {
+      name: "Figma",
+      description: "Figma Design is for people to create, share, and test designs for websites, mobile apps, and other digital products and experiences. It is a popular tool for designers, product managers, writers and developers and helps anyone involved in the design process contribute, give feedback, and make better decisions, faster.",
+      image: "/sponsors/figma.png",
+    },
   ]
 
   const friend = [
