@@ -11,32 +11,32 @@ const SponsorsSection = () => {
       </div>
 
       {/* Sponsor Grid */}
-      <div className="flex flex-col items-start gap-[30px] sm:gap-[40px] w-full">
+      <div className="flex flex-col items-start gap-[40px] sm:gap-[40px] w-full">
         {/* Sponsor Card 1 - Large */}
         <a href="https://hub.washington.edu/about/in-the-hub/asuw/" target="_blank" rel="noopener noreferrer" className="w-full select-none">
-          <div className="w-full flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+        <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <LazyImage
               src="/sponsors/asuw.png"
               alt="ASUW"
-              className="w-[240px] sm:w-[280px] md:w-[320px] h-auto"
+              className="w-[240px] sm:w-[280px] md:w-[320px] h-[auto]"
               placeholderColor="#0C0133"
             />
           </div>
         </a>
         <a href="https://www.celsius.com" target="_blank" rel="noopener noreferrer" className="w-full select-none">
-          <div className="w-full flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+        <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
             <LazyImage
               src="/sponsors/Celsius_Logo.png"
               alt="Celsius: Live Fit"
-              className="w-[240px] sm:w-[280px] md:w-[320px] h-auto"
+              className="w-[240px] sm:w-[280px] md:w-[320px] h-[auto]"
               placeholderColor="#0C0133"
             />
           </div>
         </a>
         {/* Medium Sponsors */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-[60px] sm:gap-[100px]">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-[40px] sm:gap-[40px]">
           <a href="https://www.washington.edu/brand/about/what-we-do/" target="_blank" rel="noopener noreferrer" className="select-none">
-            <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
               <LazyImage
                 src="/sponsors/umac.png"
                 alt="UMAC"
@@ -45,8 +45,9 @@ const SponsorsSection = () => {
               />
             </div>
           </a>
+
           <a href="https://gpss.washington.edu" target="_blank" rel="noopener noreferrer" className="select-none">
-            <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
               <LazyImage
                 src="/sponsors/gpss-new.png"
                 alt="GPSS"
@@ -55,12 +56,23 @@ const SponsorsSection = () => {
               />
             </div>
           </a>
+
+          <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" className="select-none">
+          <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+              <LazyImage
+                src="/sponsors/figma.png"
+                alt="Figma"
+                className="w-[150px] sm:w-[165px] md:w-[180px] h-auto"
+                placeholderColor="#0C0133"
+              />
+            </div>
+          </a>
         </div>
 
         {/* Small Sponsors */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[60px] sm:gap-[100px]">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[40px] sm:gap-[40px]">
           <a href="https://www.washington.edu/alumni" target="_blank" rel="noopener noreferrer" className="select-none">
-            <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+            <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
               <LazyImage
                 src="/sponsors/UW-Alumni.jpg"
                 alt="UW Alumni Association"
@@ -70,7 +82,7 @@ const SponsorsSection = () => {
             </div>
           </a>
           <a href="https://hub.washington.edu" target="_blank" rel="noopener noreferrer" className="select-none">
-            <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
               <LazyImage
                 src="/sponsors/UW-Hub.png"
                 alt="HUB RSO Event Fund"
@@ -80,7 +92,7 @@ const SponsorsSection = () => {
             </div>
           </a>
           <a href="https://ica.washington.edu" target="_blank" rel="noopener noreferrer" className="select-none">
-            <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
               <LazyImage
                 src="/sponsors/UWICA1.svg"
                 alt="UW ICA"
@@ -90,7 +102,7 @@ const SponsorsSection = () => {
             </div>
           </a>
           <a href="https://www.seattleboulderingproject.com" target="_blank" rel="noopener noreferrer" className="select-none">
-            <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
               <LazyImage
                 src="/sponsors/s-bouldering.png"
                 alt="SBP"
@@ -100,7 +112,7 @@ const SponsorsSection = () => {
             </div>
           </a>
           <a href="https://toastedseattle.com" target="_blank" rel="noopener noreferrer" className="select-none">
-            <div className="flex py-12 sm:py-16 md:py-20 lg:py-[100px] flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
+          <div className="w-full h-[200px] flex flex-col justify-center items-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#0C0133] transition-transform hover:scale-[1.02]">
               <LazyImage
                 src="/sponsors/toasted.png"
                 alt="TOASTED."
