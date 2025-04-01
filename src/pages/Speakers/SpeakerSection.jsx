@@ -15,7 +15,7 @@ const speakers = [
   {
     name: "Gresshaa Mehta",
     title: "Senior Product Designer, Microsoft",
-    talkName: "Breaking the Oppressive Nature of Time",
+    talkName: "Redesigning Time: Can it feel human?",
     description: "Time dictates our lives—often feeling oppressive, inaccessible, and unforgiving. But what if the problem isn't us, but the way we visualize time? In her thought-provoking talk, Gresshaa, a product designer at Microsoft, challenges conventional design perspectives by exploring the intersections of UX design, physics, time, and cultural influences. She invites the audience on a sensory journey to reimagine how we perceive and interact with time. By examining how design shapes our experience of time, Gresshaa offers fresh insights into making time more accessible and empowering us to take control of it, rather than feeling controlled by it.",
     image: "/speakers/gesshaa.jpg",
     linkedin: "https://www.linkedin.com/in/gresshaa/",
