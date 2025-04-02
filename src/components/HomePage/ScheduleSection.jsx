@@ -122,7 +122,7 @@ const ScheduleSection = () => {
                             11:30 - 11:45 AM
                         </p>
 
-                        <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
+                        <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px] py-2 sm:py-4">
                             Traditional Chinese Dance
                         </h2>
 
@@ -239,7 +239,7 @@ const ScheduleSection = () => {
                             1:25 - 1:40 PM
                         </p>
 
-                        <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
+                        <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px] py-2 sm:py-4">
                             Developpe Dance Club
                         </h2>
 
@@ -366,7 +366,7 @@ const ScheduleSection = () => {
                             2:35 - 2:50 PM
                         </p>
 
-                        <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
+                        <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px] py-2 sm:py-4">
                             Furmata Acapella
                         </h2>
 
