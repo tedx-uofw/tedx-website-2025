@@ -4,7 +4,7 @@ const SponsorsSection = () => {
   return (
     <div className="flex flex-col items-start px-6 sm:px-6 md:px-[100px] lg:px-[200px] py-[60px] sm:py-[100px] gap-[30px] sm:gap-[50px] w-full min-h-screen bg-[#080808]">
       {/* Header */}
-      <div className="w-full">
+      <div className="w-full mb-8">
         <h1 className="text-[#FDFCFD] font-favorit text-xl sm:text-3xl md:text-[36px] lg:text-[44px] font-medium leading-tight sm:leading-snug md:leading-[44px] lg:leading-[50px] tracking-[-0.02em]">
           Thank you to our sponsors!
         </h1>
