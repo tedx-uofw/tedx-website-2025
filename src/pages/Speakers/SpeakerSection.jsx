@@ -6,7 +6,7 @@ const speakers = [
   {
     name: "Michael Wang",
     title: "Founder/Chief Clinical Officer at INSPIREN",
-    talkName: "Crossing the Chasm of Life’s Changes",
+    talkName: "Crossing the Chasm of Life",
     description: "Life's only certainty is change. From serving as a Special Forces soldier in Afghanistan to caring for patients as a nurse and founding a tech company, Michael Wang's story is a testament to the transformative power of introspection. Through pivotal life moments, he discovered that true impact lies not in changing the world at large but in transforming one person's world. Michael's journey underscores the profound possibilities that arise when we focus on meaningful, personal connections—revealing that small, deliberate actions can create ripples of change that extend far beyond our immediate reach.",
     image: "/speakers/mike.jpg",
     linkedin: "https://www.linkedin.com/in/michael-wang-inspiren",

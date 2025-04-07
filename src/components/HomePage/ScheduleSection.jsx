@@ -395,7 +395,7 @@ const ScheduleSection = () => {
 
                         <div className="flex flex-col items-start gap-0.5 sm:gap-2">
                             <h2 className="text-[#FDFCFD] font-medium text-lg sm:text-3xl md:text-[36px] leading-tight md:leading-[48px] tracking-[-0.72px]">
-                                Crossing the Chasm of Life's Changes
+                                Crossing the Chasm of Life
                             </h2>
                             
                             <h3 className="text-[#B1A8B3] text-sm sm:text-2xl md:text-[28px] leading-tight sm:leading-snug md:leading-[34px] tracking-[-0.28px]">
