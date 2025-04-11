@@ -28,7 +28,7 @@ export default function SpeakerCoachThanks() {
       
       {/* Content Stays Fully Visible */}
       <div className="w-full z-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">Special Thanks to our Speaker Coaches</h2>
+        <h2 className="text-2xl md:text-5xl font-bold text-white mb-12">Special Thanks to our Speaker Coaches</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {coaches.map((coach, index) => (
