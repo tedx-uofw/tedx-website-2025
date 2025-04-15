@@ -119,6 +119,13 @@ export default function SponsorSection() {
     </div>
   </div>
 
+  <SponsorHeader header={'Donate to TEDx UofW'}/> 
+
+  <div className="flex justify-center w-full mb-100">
+    
+    <givebutter-widget className="w-full" id="jNXbyg"></givebutter-widget>
+  </div>
+
   </div>
 </div>
   )

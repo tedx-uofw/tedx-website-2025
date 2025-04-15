@@ -14,10 +14,6 @@ export default function Sponsors() {
     <SponsorHero/>
     <SponsorSection/>
     {/* Donation Form Section */}
-
-    <div className="flex justify-center w-full mb-100">
-      <givebutter-widget className="w-full" id="jNXbyg"></givebutter-widget>
-    </div>
     </>
   )
 }
