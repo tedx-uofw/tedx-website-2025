@@ -1,0 +1,73 @@
+/* The main wrapper for all 9 videos */
+.bento-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px; /* Vertical spacing between the rows */
+  padding: 0px 40px 0px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Add this to your App.css */
+.large-video {
+  width: 100%; /* Fills the container */
+  max-width: 1000px; /* Limits how big it can get */
+  aspect-ratio: 16 / 9; /* Automatically sets the height */
+  height: auto;
+  border-radius: 30px; /* Optional: rounded corners */
+}
+
+/* The horizontal rows (the blue dotted boxes in your image) */
+.bento-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 128px; /* Horizontal spacing between the videos */
+}
+/* Make the last row center when it has fewer items */
+.bento-row:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 128px;
+}
+/* Individual Video Cards */
+.video-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  gap: 8px;
+}
+
+.video-card iframe {
+  aspect-ratio: 16 / 9; /* Standard video shape */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.video-card section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 0;
+  word-wrap: break-word;
+}
+
+.video-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Subtle hover effect */
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .bento-row {
+    grid-template-columns: 1fr; /* Stack into 1 column on small screens */
+  }
+}
