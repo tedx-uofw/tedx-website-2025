@@ -12,7 +12,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/wH9FD7LVhUU?si=uejcjzN2nW5H6CbX"
             ></iframe>
             <section>
-              <p>Diana Vicezar</p>
+              <p style={{ fontSize: "125%" }}>Diana Vicezar</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
@@ -23,7 +23,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/5B_tZ4V8Y1E?si=SJqZJMqipkt5XBFc"
             ></iframe>
             <section>
-              <p>Kris Engskov</p>
+              <p style={{ fontSize: "125%" }}>Kris Engskov</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
@@ -34,7 +34,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/A_0yyJsJm7M?si=hNvpfQ29UYCSbslZ"
             ></iframe>
             <section>
-              <p>Traditional Chinese Dance</p>
+              <p style={{ fontSize: "125%" }}>Traditional Chinese Dance</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
@@ -48,7 +48,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/iZNNnN_1QYc?si=6CwZFlRZ_d5GBR9J"
             ></iframe>
             <section>
-              <p>Ana Maria Pinto da Silva</p>
+              <p style={{ fontSize: "125%" }}>Ana Maria Pinto da Silva</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
@@ -59,7 +59,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/Rx2_J2cRQoc?si=_QIHOIQ8PDwPOi9H"
             ></iframe>
             <section>
-              <p>Developpe Dance Club</p>
+              <p style={{ fontSize: "125%" }}>Developpe Dance Club</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
@@ -70,7 +70,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/kxIHZhrfi-A?si=MT2bTBwdAWBvrSru"
             ></iframe>
             <section>
-              <p>Gresshaa Mehta</p>
+              <p style={{ fontSize: "125%" }}>Gresshaa Mehta</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
@@ -84,7 +84,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/yoc36WXD8fI?si=CzrXuWVZceCeniFr"
             ></iframe>
             <section>
-              <p>Doc Wilson</p>
+              <p style={{ fontSize: "125%" }}>Doc Wilson</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
@@ -95,7 +95,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/ViXn0g5lMug?si=2ncuRhYqmU_yjtK1"
             ></iframe>
             <section>
-              <p>Furmata Acapella</p>
+              <p style={{ fontSize: "125%" }}>Furmata Acapella</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
@@ -106,7 +106,7 @@ const AboutSection = () => {
               src="https://www.youtube.com/embed/5JsT0aic_n0?si=tf41w7EbMZVp7KQg"
             ></iframe>
             <section>
-              <p>Michael Wang</p>
+              <p style={{ fontSize: "125%" }}>Michael Wang</p>
               {/* <p>Why your career needs a North Star</p> */}
             </section>
           </section>
