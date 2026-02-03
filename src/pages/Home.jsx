@@ -1,14 +1,23 @@
-import { lazy, Suspense, useState, useEffect } from 'react';
-import HeroSection from '../components/HomePage/HeroSection';
-import LazySection from '../components/common/LazySection';
-import usePageLoad from '../hooks/usePageLoad';
+import { lazy, Suspense, useState, useEffect } from "react";
+import HeroSection from "../components/HomePage/HeroSection";
+import LazySection from "../components/common/LazySection";
+import usePageLoad from "../hooks/usePageLoad";
 
 // Lazy-loaded components
-const AboutSection = lazy(() => import('../components/HomePage/AboutSection'));
-const VideoSection = lazy(() => import('../components/HomePage/VideoSection'));
-const ScheduleSection = lazy(() => import('../components/HomePage/ScheduleSection'));
-const VenueAndAccessibilitySection = lazy(() => import('../components/HomePage/VenueAndAccessibilitySection'));
-const SponsorsSection = lazy(() => import('../components/HomePage/SponsorsSection'));
+const AboutSection = lazy(() => import("../components/HomePage/AboutSection"));
+const VideoSection = lazy(() => import("../components/HomePage/VideoSection"));
+const SpeakerVideoSection = lazy(() =>
+  import("../components/HomePage/SpeakerVideoSection")
+);
+const ScheduleSection = lazy(() =>
+  import("../components/HomePage/ScheduleSection")
+);
+const VenueAndAccessibilitySection = lazy(() =>
+  import("../components/HomePage/VenueAndAccessibilitySection")
+);
+const SponsorsSection = lazy(() =>
+  import("../components/HomePage/SponsorsSection")
+);
 
 // Fallback loading component
 const LoadingFallback = () => (
@@ -26,7 +35,7 @@ const Home = () => {
     if (coreContentLoaded) {
       // Start animation sequence with staggered delays
       const timer = setInterval(() => {
-        setAnimationSequence(prev => {
+        setAnimationSequence((prev) => {
           const next = prev + 1;
           if (next > 5) {
             clearInterval(timer);
@@ -44,11 +53,23 @@ const Home = () => {
       {/* Hero section is always loaded immediately for best UX */}
       <HeroSection />
 
+      {/* Speaker Videos Section */}
+      <LazySection
+        className="w-full"
+        rootMargin="200px"
+        delay={100}
+        threshold={0.1}
+      >
+        <Suspense fallback={<LoadingFallback />}>
+          <SpeakerVideoSection />
+        </Suspense>
+      </LazySection>
+
       {/* About section with animation delay */}
-      <LazySection 
-        className="w-full" 
-        rootMargin="200px" 
-        delay={100} 
+      <LazySection
+        className="w-full"
+        rootMargin="200px"
+        delay={100}
         threshold={0.1}
       >
         <Suspense fallback={<LoadingFallback />}>
@@ -57,10 +78,10 @@ const Home = () => {
       </LazySection>
 
       {/* Video section */}
-      <LazySection 
-        className="w-full" 
-        rootMargin="200px" 
-        delay={150} 
+      <LazySection
+        className="w-full"
+        rootMargin="200px"
+        delay={150}
         threshold={0.1}
       >
         <Suspense fallback={<LoadingFallback />}>
@@ -70,10 +91,10 @@ const Home = () => {
 
       {/* Schedule section */}
       <div className="relative z-10 mt-[50px]">
-        <LazySection 
-          className="w-full" 
-          rootMargin="200px" 
-          delay={200} 
+        <LazySection
+          className="w-full"
+          rootMargin="200px"
+          delay={200}
           threshold={0.1}
         >
           <Suspense fallback={<LoadingFallback />}>
@@ -83,10 +104,10 @@ const Home = () => {
       </div>
 
       {/* Venue section */}
-      <LazySection 
-        className="w-full" 
-        rootMargin="200px" 
-        delay={250} 
+      <LazySection
+        className="w-full"
+        rootMargin="200px"
+        delay={250}
         threshold={0.1}
       >
         <Suspense fallback={<LoadingFallback />}>
@@ -95,10 +116,10 @@ const Home = () => {
       </LazySection>
 
       {/* Sponsors section */}
-      <LazySection 
-        className="w-full" 
-        rootMargin="200px" 
-        delay={300} 
+      <LazySection
+        className="w-full"
+        rootMargin="200px"
+        delay={300}
         threshold={0.1}
       >
         <Suspense fallback={<LoadingFallback />}>
