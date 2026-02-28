@@ -2,9 +2,9 @@ import "./SpeakerVideoSection.css";
 
 const AboutSection = () => {
   return (
-    <section className="flex flex-col md:flex-row px-6 md:px-12 lg:px-[100px] py-8 md:py-12 lg:py-20 items-center lg:items-center gap-8 md:gap-12 lg:gap-[100px] self-stretch bg-dark]">
-      <div class="bento-container">
-        <div class="bento-row">
+    <section className="flex flex-col md:flex-row px-6 md:px-12 lg:px-[100px] py-8 md:py-12 lg:py-20 items-center lg:items-center gap-8 md:gap-12 lg:gap-[100px] self-stretch bg-dark">
+      <div className="bento-container">
+        <div className="bento-row">
           <section className="video-card">
             <iframe
               className="large-video"
@@ -40,7 +40,7 @@ const AboutSection = () => {
           </section>
         </div>
 
-        <div class="bento-row">
+        <div className="bento-row">
           <section className="video-card">
             <iframe
               className="large-video"
@@ -76,7 +76,7 @@ const AboutSection = () => {
           </section>
         </div>
 
-        <div class="bento-row">
+        <div className="bento-row">
           <section className="video-card">
             <iframe
               className="large-video"
